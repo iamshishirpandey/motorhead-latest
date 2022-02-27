@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
-import ProductCard from "../products/ProductCard";
+import ProductCard from "../Products/ProductCard";
 
 type Props = {};
 
