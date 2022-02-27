@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
-import FullCarousel from "../components/home/FullCarousel";
+
 import OurProduct from "../components/Home/OurProduct";
 import Blogs from "../components/Home/Blogs";
+import FullCarousel from "../components/Home/FullCarousel";
 
 const Home: NextPage = () => {
   return (
