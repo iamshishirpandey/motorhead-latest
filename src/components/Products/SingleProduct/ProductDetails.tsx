@@ -11,11 +11,16 @@ const ProductDetails = (props: Props) => {
           <Swipers />
         </div>
         <div className="py-5 space-y-8">
-          <h1 className="text-4xl font-light ">AGV K-3 – Matt Black</h1>
-          <p className="text-xl">$157.00</p>
-          <p className="text-sm text-gray-700">
-            The interior pads are made from Dri-Lex and microfibre with a
-            sanitising treatment
+          <h1 className="text-4xl font-light "> TEKKEN 250</h1>
+          <p className="text-lg font-medium">
+            <span className="text-xl font-bold">MRP Rs. 395000</span>
+          </p>
+          <p className="text-sm text-gray-500">
+            Featuring an attractive graphics, Tekken 250 consists of the double
+            exhaust with steel muffler pipes. The seat height of 820mm provides
+            a tall and comfortable riding posture to the crossover. The bike
+            consists of a fuel tank of 14 liters with an expected mileage of
+            around 40kmpl.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3  gap-3">
             <span className="text-lg">Model:</span>

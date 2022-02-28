@@ -9,23 +9,18 @@ import "swiper/css/thumbs";
 type Props = {};
 
 const image = [
-  "https://swiperjs.com/demos/images/nature-1.jpg",
-  "https://swiperjs.com/demos/images/nature-2.jpg",
-  "https://swiperjs.com/demos/images/nature-3.jpg",
-  "https://swiperjs.com/demos/images/nature-4.jpg",
-  "https://swiperjs.com/demos/images/nature-5.jpg",
-  "https://swiperjs.com/demos/images/nature-6.jpg",
-  "https://swiperjs.com/demos/images/nature-7.jpg",
-  "https://swiperjs.com/demos/images/nature-8.jpg",
-  "https://swiperjs.com/demos/images/nature-9.jpg",
-  "https://swiperjs.com/demos/images/nature-10.jpg",
+  "/tekken1.jpeg",
+  // "/tekken2.png",
+  "/tekken3.jpeg",
+  "/tekken4.jpeg",
+  // "/tekken5.jpeg",
 ];
 
 const Swipers = (props: Props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <>
+    <div className="">
       <Swiper
         loop={true}
         spaceBetween={10}
@@ -36,7 +31,7 @@ const Swipers = (props: Props) => {
       >
         {image.map((item, index) => (
           <SwiperSlide key={index}>
-            <img src={item} alt={item} />
+            <img src={item} alt={item} className="object-fill w-full h-96" />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -52,11 +47,11 @@ const Swipers = (props: Props) => {
       >
         {image.map((item, index) => (
           <SwiperSlide key={index}>
-            <img src={item} alt={item} />
+            <img src={item} alt={item} className="w-full h-24" />
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 
