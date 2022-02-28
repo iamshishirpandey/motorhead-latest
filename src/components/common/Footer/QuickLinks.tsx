@@ -3,12 +3,14 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 type Props = {};
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
-  { name: "Our Product", href: "/blog", current: false },
-  { name: "Dealer Network", href: "/blog", current: false },
-  { name: "News & Event", href: "/blog", current: false },
-  { name: "Contact US", href: "/contact", current: false },
+  { id: 1, name: "Home", href: "/", current: true },
+  { id: 2, name: "About", href: "/about", current: false },
+  { id: 3, name: "Our Product", href: "/products", current: false },
+  { id: 4, name: "Dealer Network", href: "/dealer-network", current: false },
+  { id: 5, name: "News & Event", href: "/blog", current: false },
+  // { name: "Customer Review", href: "/blog", current: false },
+  // { name: "Gallery", href: "/about", current: false },
+  { id: 6, name: "Contact US", href: "/contact", current: false },
 ];
 
 const QuickLinks = (props: Props) => {
