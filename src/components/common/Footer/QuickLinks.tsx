@@ -7,9 +7,7 @@ const navigation = [
   { name: "About", href: "/about", current: false },
   { name: "Our Product", href: "/blog", current: false },
   { name: "Dealer Network", href: "/blog", current: false },
-  { name: "Customer Review", href: "/blog", current: false },
   { name: "News & Event", href: "/blog", current: false },
-  { name: "Gallery", href: "/about", current: false },
   { name: "Contact US", href: "/contact", current: false },
 ];
 

@@ -25,7 +25,7 @@ const Footer = (props: Props) => {
             className="w-96 h-auto"
           />
           <div className="text-center text-sm ">
-            Copyright © Motor Vehikle by{" "}
+            Copyright © MotorHead by{" "}
             <a href="#" className="font-semibold">
               Prabidhi Lab
             </a>
