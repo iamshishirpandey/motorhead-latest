@@ -69,8 +69,8 @@ const Member = (props: Props) => {
               <div className="grid grid-cols-2 gap-5">
                 <div className="flex flex-col space-y-4 items-center">
                   <img
-                    src="shiva-prasad-ghimire.jpeg"
-                    alt="shiva-prasad-ghimire.jpeg"
+                    src={item.img}
+                    alt={item.img}
                     className="w-full h-72 bg-cover"
                   />
                   <h1 className="text-xl font-bold text-red-700">

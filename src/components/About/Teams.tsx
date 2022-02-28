@@ -2,26 +2,33 @@ import React, { useState } from "react";
 import Member from "./Member";
 
 type Props = {};
+const teams = [
+  {
+    img: "shiva-prasad-ghimire.jpeg",
+    name: "Shiva Prasad Ghimire",
+    post: "Vice–Chairman",
+  },
+  {
+    img: "sugam-ghimire.jpeg",
+    name: "Sugam Ghimire",
+    post: "Executive Director",
+  },
+  {
+    img: "sudip-ghimire.jpeg",
+    name: "Sudip Ghimire",
+    post: "Director",
+  },
+];
 
 const Teams = (props: Props) => {
   const [open, setOpen] = useState(false);
-  const teams = [
-    {
-      img: "shiva-prasad-ghimire.jpeg",
-      name: "Shiva Prasad Ghimire",
-      post: "Vice–Chairman",
-    },
-    {
-      img: "sugam-ghimire.jpeg",
-      name: "Sugam Ghimire",
-      post: "Executive Director",
-    },
-    {
-      img: "sudip-ghimire.jpeg",
-      name: "Sudip Ghimire",
-      post: "Director",
-    },
-  ];
+  const [passMember, setPassMember] = useState(0);
+  const [show, setShow] = useState("");
+
+  function member(index: React.SetStateAction<number>) {
+    setOpen(true);
+    setPassMember(index);
+  }
   return (
     <>
       <div className="sm:p-5  md:p-10 xl:px-28">
@@ -31,32 +38,44 @@ const Teams = (props: Props) => {
             {teams.map((item, index) => (
               <>
                 <div
-                  onClick={() => setOpen(true)}
+                  onClick={() => member(index)}
                   className="h-96 bg-center bg-opacity-50 p-4 relative bg-white cursor-pointer"
                   style={{
                     backgroundImage: `url(${item.img})`,
                   }}
+                  onMouseOver={() => setShow(item.name)}
+                  onMouseLeave={() => setShow("")}
                 >
                   <div className="h-full bg-white "></div>
-                  <div className="absolute inset-0 hover:translate-x-8  hover:translate-y-8  hover:duration-300 transition-all">
+                  <div
+                    className={`${
+                      show === item.name
+                        ? "translate-x-8 translate-y-8  duration-300 transition-all"
+                        : ""
+                    } absolute inset-0`}
+                  >
                     <div className="relative">
                       <img
                         src={item.img}
                         alt={item.img}
                         className="w-full h-96"
                       />
-                      <div className="absolute inset-0 w-full h-full hover:bg-opacity-80 hover:bg-red-700 text-white flex flex-col justify-end p-5 rounded">
+                      <div
+                        className={`${
+                          show === item.name ? "bg-opacity-80 bg-red-700" : ""
+                        } absolute inset-0 w-full h-full  text-white flex flex-col justify-end p-5 rounded`}
+                      >
                         <span className="font-light text-2xl">{item.name}</span>
                         <span className="text-sm">{item.post}</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <Member open={open} setOpen={setOpen} item={item} />
               </>
             ))}
           </div>
         </div>
+        <Member open={open} setOpen={setOpen} item={teams[passMember]} />
       </div>
     </>
   );

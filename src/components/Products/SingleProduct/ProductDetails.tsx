@@ -17,14 +17,6 @@ const ProductDetails = (props: Props) => {
             The interior pads are made from Dri-Lex and microfibre with a
             sanitising treatment
           </p>
-          <div>
-            <div className="text-sm text-red-700">93 in stock</div>
-            <div>
-              <button className="px-5 p-2 bg-red-700 text-white rounded">
-                Add To Card
-              </button>
-            </div>
-          </div>
           <div className="grid grid-cols-2 md:grid-cols-3  gap-3">
             <span className="text-lg">Model:</span>
             <span className="md:col-span-2 text-gray-700 font-light">

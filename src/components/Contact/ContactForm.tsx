@@ -24,9 +24,9 @@ const ContactForm = (props: Props) => {
               />
             </label>
             <label className="flex space-x-5 items-center text-gray-800">
-              <span className="w-20">Number</span>
+              <span className="w-20">Phone Number</span>
               <input
-                type="number"
+                type="text"
                 className="w-full p-3 border-2 border-gray-100 rounded"
               />
             </label>
