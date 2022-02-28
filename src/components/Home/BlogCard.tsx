@@ -8,13 +8,13 @@ const BlogCard = (props: Props) => {
   return (
     <div className="bg-zinc-200 rounded-md overflow-hidden w-full">
       <div
-        className="w-full flex justify-end items-end sm:items-start  sm:p-6 h-64 sm:h-auto"
+        className="w-full flex justify-end items-end sm:items-start  sm:p-6 h-64 sm:h-auto bg-no-repeat bg-cover"
         style={{
           //   clipPath: "polygon(0 0, 22% 0, 35% 100%, 0% 100%)",
           backgroundImage: `url("bike1.jpeg")`,
         }}
       >
-        <div className="ms:bg-white rounded-sm md:w-3/4 p-4">
+        <div className="sm:bg-white rounded-sm md:w-3/4 p-4">
           <div className="flex flex-col items-start md:pl-5  sm:p-5 md:py-10 space-y-5 text-sm sm:text-base">
             <div className="hover:text-red-700 font-medium text-left text-white sm:text-black text-2xl">
               MOTORHEAD Motorcycle
