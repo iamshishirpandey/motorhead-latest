@@ -106,7 +106,7 @@ const Details = (props: Props) => {
         </ul>
         <div className="p-5 sm:p-10 sm:col-span-3 space-y-10">
           {tabs.map((item, index) => (
-            <>
+            <div key={index}>
               {item.id === show && (
                 <div key={index} className=" space-y-5 sm:space-y-10">
                   <h1 className="px-5 border-l-2 border-red-700 text-2xl font-medium">
@@ -119,7 +119,7 @@ const Details = (props: Props) => {
                   </div>
                 </div>
               )}
-            </>
+            </div>
           ))}
         </div>
       </div>

@@ -21,7 +21,7 @@ const OurProduct = (props: Props) => {
   ];
   return (
     <>
-      <div className="py-20 px-5 lg:px-10  xl:px-28">
+      <div className="py-10 sm:py-20 px-5 lg:px-10  xl:px-28">
         <div className="text-center text-4xl font-bold py-16">OUR PRODUCTS</div>
         <Swiper
           slidesPerView={1}

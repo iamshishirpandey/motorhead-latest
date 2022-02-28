@@ -5,7 +5,7 @@ type Props = {};
 
 const Blogs = (props: Props) => {
   return (
-    <div className="px-5 md:px-10 xl:px-28 py-10 xl:py-20">
+    <div className="px-5 md:px-10 xl:px-28 pb-10 sm:py-10 xl:py-20">
       <div className="text-center w-full flex flex-col justify-center items-center space-y-5">
         <h1 className="text-3xl font-bold">LASTEST BLOGS</h1>
         {/* <p className="lowercase text-sm text-gray-500  w-1/2">
