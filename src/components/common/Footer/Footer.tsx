@@ -12,24 +12,15 @@ const Footer = (props: Props) => {
       className=" bg-cover bg-no-repeat transition duration-150 ease-in-out"
       style={{ backgroundImage: `url("bike1.jpeg")` }}
     >
-      <div className="px-5 xl:px-28 py-16 bg-black opacity-80 text-white">
+      <div className="px-5 xl:px-28 py-16 bg-black bg-opacity-80 text-white">
         <div className="grid md:grid-cols-3 gap-10">
           <Contact />
           <About />
           <QuickLinks />
         </div>
-        <div className="mt-20 space-y-4 flex flex-col items-center justify-center">
-          <img
-            src="payment-home1.png"
-            alt="payment-home1"
-            className="w-96 h-auto"
-          />
+        <div className="mt-20 flex flex-col items-center justify-center">
           <div className="text-center text-sm ">
-            Copyright © MotorHead by{" "}
-            <a href="#" className="font-semibold">
-              Prabidhi Lab
-            </a>
-            . All rights reserved.
+            Copyright © MotorHead. All rights reserved.
           </div>
         </div>
       </div>

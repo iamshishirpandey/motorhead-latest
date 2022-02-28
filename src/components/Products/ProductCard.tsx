@@ -1,10 +1,13 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaPlus } from "react-icons/fa";
+import { BsFillEyeFill, BsPlus } from "react-icons/bs";
 
 type Props = {};
 
 const ProductCard = (props: Props) => {
   const [show, setShow] = useState(false);
+  const [showbutton, setShowbutton] = useState(false);
   return (
     <Link passHref href="/singleProduct">
       <div
@@ -19,6 +22,12 @@ const ProductCard = (props: Props) => {
           <div className=" -rotate-45 font-bold">New</div>
         </div>
         <img src="bike2.jpeg" className="w-full h-96" alt="" />
+        {/* {show && (
+          <div className="-top-5 flex items-center justify-center absolute h-full w-full animate__animated animate__fadeUp animate__delay-3s">
+            <BsPlus className="w-16 h-16 text-red-500" />
+          </div>
+        )} */}
+
         <div className="p-5 capitalize">
           <div className="text-xl font-light">MRP - Rs.2133000</div>
           <div className="">teken 250</div>
@@ -26,10 +35,19 @@ const ProductCard = (props: Props) => {
         <div
           className={`${
             show ? "flex" : "hidden"
-          } absolute bottom-0 left-0 right-0 p-5  justify-center bg-gray-200`}
+          } absolute bottom-0 left-0 h-24 right-0 p-5 justify-center bg-zinc-200 animate__animated animate__fadeInUp animate__faster`}
         >
-          <button className="p-3 px-5 bg-white rounded hover:bg-red-700 hover:text-white capitalize">
-            view product
+          <button
+            className="bg-white capitalize flex justify-center items-center h-12 pl-4 px-2 text-zinc-400 hover:bg-red-700 hover:text-white  shadow border rounded-md"
+            onMouseOver={() => setShowbutton(true)}
+            onMouseLeave={() => setShowbutton(false)}
+          >
+            <span>view</span>
+            <BsFillEyeFill
+              className={`${
+                showbutton ? "text-white" : "text-zinc-400"
+              } w-9 h-9  p-2`}
+            />
           </button>
         </div>
       </div>

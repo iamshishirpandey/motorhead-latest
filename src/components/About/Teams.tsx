@@ -39,36 +39,14 @@ const Teams = (props: Props) => {
               <>
                 <div
                   onClick={() => member(index)}
-                  className="h-96 bg-center bg-opacity-50 p-4 relative bg-white cursor-pointer"
+                  className="h-72 bg-center bg-opacity-50 p-4 bg-white cursor-pointer bg-cover"
                   style={{
                     backgroundImage: `url(${item.img})`,
                   }}
-                  onMouseOver={() => setShow(item.name)}
-                  onMouseLeave={() => setShow("")}
                 >
-                  <div className="h-full bg-white "></div>
-                  <div
-                    className={`${
-                      show === item.name
-                        ? "translate-x-8 translate-y-8  duration-300 transition-all"
-                        : ""
-                    } absolute inset-0`}
-                  >
-                    <div className="relative">
-                      <img
-                        src={item.img}
-                        alt={item.img}
-                        className="w-full h-96"
-                      />
-                      <div
-                        className={`${
-                          show === item.name ? "bg-opacity-80 bg-red-700" : ""
-                        } absolute inset-0 w-full h-full  text-white flex flex-col justify-end p-5 rounded`}
-                      >
-                        <span className="font-light text-2xl">{item.name}</span>
-                        <span className="text-sm">{item.post}</span>
-                      </div>
-                    </div>
+                  <div className="inset-0 w-full h-full flex flex-col justify-end rounded text-white font-bold">
+                    <span className="font text-2xl">{item.name}</span>
+                    <span className="text-sm">{item.post}</span>
                   </div>
                 </div>
               </>
@@ -82,3 +60,40 @@ const Teams = (props: Props) => {
 };
 
 export default Teams;
+
+{
+  /* <div
+  onClick={() => member(index)}
+  className="h-96 bg-center bg-opacity-50 p-4 relative bg-white cursor-pointer"
+  style={{
+    backgroundImage: `url(${item.img})`,
+  }}
+  onMouseOver={() => setShow(item.name)}
+  onMouseLeave={() => setShow("")}
+>
+  <div className="h-full bg-white "></div>
+  <div
+    className={`${
+      show === item.name
+        ? "translate-x-8 translate-y-8  duration-300 transition-all"
+        : ""
+    } absolute inset-0`}
+  >
+    <div className="relative">
+      <img
+        src={item.img}
+        alt={item.img}
+        className="w-full h-96"
+      />
+      <div
+        className={`${
+          show === item.name ? "bg-opacity-80 bg-red-700" : ""
+        } absolute inset-0 w-full h-full  text-white flex flex-col justify-end p-5 rounded`}
+      >
+        <span className="font-light text-2xl">{item.name}</span>
+        <span className="text-sm">{item.post}</span>
+      </div>
+    </div>
+  </div>
+</div> */
+}

@@ -52,25 +52,17 @@ const FullCarousel = () => {
                   {item.title}
                 </div>
                 <div className="flex space-x-5 ms:space-x-10 md:space-x-16 justify-center items-center">
-                  <span className="flex flex-col space-y-1 items-end animate__animated animate__backInLeft">
+                  <span className="flex flex-col space-y-1 items-end animate__animated animate__fadeInLeft">
                     <span className="w-20 md:w-28 h-0.5 bg-white" />
                     <span className="w-12 md:w-20 h-0.5 bg-white" />
                   </span>
                   <div className="uppercase sm:text-xl font-light animate__animated animate__fadeInUp">
                     Motorhead
                   </div>
-                  <span className="flex flex-col space-y-1 justify-end animate__animated animate__backInRight">
+                  <span className="flex flex-col space-y-1 justify-end animate__animated animate__fadeInRight">
                     <span className="md:w-28 w-20 h-0.5 bg-white" />
                     <span className="md:w-20 w-12 h-0.5 bg-white" />
                   </span>
-                </div>
-                <div className="flex justify-center">
-                  <a
-                    href="#"
-                    className="bg-black hover:bg-white hover:text-black p-3 px-5 rounded uppercase animate__animated animate__fadeInUp"
-                  >
-                    Shop Now
-                  </a>
                 </div>
               </div>
             </div>
