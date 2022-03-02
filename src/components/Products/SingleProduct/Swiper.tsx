@@ -20,7 +20,7 @@ const Swipers = (props: Props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="">
+    <div className="bg-gray-600">
       <Swiper
         loop={true}
         spaceBetween={10}
@@ -47,7 +47,7 @@ const Swipers = (props: Props) => {
       >
         {image.map((item, index) => (
           <SwiperSlide key={index}>
-            <img src={item} alt={item} className="w-full h-24" />
+            <img src={item} alt={item} className="w-full h-20 bg-cover" />
           </SwiperSlide>
         ))}
       </Swiper>
