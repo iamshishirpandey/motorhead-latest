@@ -4,14 +4,10 @@ import * as Yup from "yup";
 
 type Props = {};
 const SignupSchema = Yup.object().shape({
-  Name: Yup.string()
+  name: Yup.string()
     .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  password: Yup.string()
-    .required("No password provided.")
-    .min(8, "Password is too short - should be 8 chars minimum."),
 });
 
 const LostPassword = (props: Props) => {
@@ -23,13 +19,10 @@ const LostPassword = (props: Props) => {
 
       <Formik
         initialValues={{
-          firstName: "",
-          lastName: "",
-          email: "",
+          name: "",
         }}
         validationSchema={SignupSchema}
         onSubmit={(values) => {
-          // same shape as initial values
           console.log(values);
         }}
       >
@@ -43,13 +36,11 @@ const LostPassword = (props: Props) => {
                 name="Name"
                 className="p-2 w-full rounded border border-t-2 border-gray-300 hover:border-red-700 focus:outline-none focus:ring-2 focus:ring-red-700"
               />
-              {errors.firstName && touched.firstName ? (
-                <div className="text-sm text-red-700">{errors.firstName}</div>
+              {errors.name && touched.name ? (
+                <div className="text-sm text-red-700">{errors.name}</div>
               ) : null}
             </label>
 
-            <Field name="email" type="email" />
-            {errors.email && touched.email ? <div>{errors.email}</div> : null}
             <button
               type="submit"
               className=" py-2 bg-red-700 hover:bg-red-900 text-white rounded w-full font-semibold"
