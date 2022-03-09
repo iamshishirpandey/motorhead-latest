@@ -1,19 +1,23 @@
 import React from "react";
 import Swipers from "./Swiper";
+import { useRouter } from "next/router";
+import { productObject } from "../../productObject";
 
-type Props = {};
+type Props = {
+  bike: any;
+};
 
 const ProductDetails = (props: Props) => {
+  const { bike } = props;
+  console.log(bike);
   return (
     <div className="bg-gray-100 lg:p-10 xl:px-28 xl:py-16 ">
       <div className="bg-white p-5 lg:p-10 rounded grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <div>
-          <Swipers />
-        </div>
+        <div>{bike.img && bike.img[0] && <Swipers img={bike.img} />}</div>
         <div className="py-5 space-y-8">
-          <h1 className="text-4xl font-light "> TEKKEN 250</h1>
+          <h1 className="text-4xl font-light ">{bike.name}</h1>
           <p className="text-lg font-medium">
-            <span className="text-xl font-bold">MRP Rs. 395000</span>
+            <span className="text-xl font-bold">MRP Rs. {bike.price}</span>
           </p>
           <p className="text-sm text-gray-500">
             Featuring an attractive graphics, Tekken 250 consists of the double

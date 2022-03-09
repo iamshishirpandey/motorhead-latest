@@ -28,7 +28,7 @@ const MainHeader = () => {
           className={`${
             screen ? "h-14" : "h-10 lg:h-16"
           } mainLogo text-sky-900 cursor-pointer`}
-          src="logo.png"
+          src="/logo.png"
           alt="logo.png"
         />
       </Link>

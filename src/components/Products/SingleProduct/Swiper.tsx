@@ -6,30 +6,26 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-type Props = {};
-
-const image = [
-  "/tekken1.jpeg",
-  // "/tekken2.png",
-  "/tekken3.jpeg",
-  "/tekken4.jpeg",
-  // "/tekken5.jpeg",
-];
+type Props = {
+  img: string[];
+};
 
 const Swipers = (props: Props) => {
+  const { img } = props;
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  console.log(img);
 
   return (
-    <div className="bg-gray-600">
+    <div className="bg-gray-100">
       <Swiper
-        loop={true}
+        // loop={true}
         spaceBetween={10}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        {image.map((item, index) => (
+        {img.map((item, index) => (
           <SwiperSlide key={index}>
             <img src={item} alt={item} className="object-fill w-full h-96" />
           </SwiperSlide>
@@ -37,7 +33,7 @@ const Swipers = (props: Props) => {
       </Swiper>
       <Swiper
         onSwiper={() => setThumbsSwiper}
-        loop={true}
+        // loop={true}
         spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
@@ -45,7 +41,7 @@ const Swipers = (props: Props) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-        {image.map((item, index) => (
+        {img.map((item, index) => (
           <SwiperSlide key={index}>
             <img src={item} alt={item} className="w-full h-20 bg-cover" />
           </SwiperSlide>

@@ -1,9 +1,9 @@
 import React from "react";
-import Product from "../components/Products/SingleProduct/Product";
+import OurProduct from "../../components/Products/OurProduct";
 
 type Props = {};
 
-const sinpleProduct = (props: Props) => {
+const products = (props: Props) => {
   return (
     <div className="bg-gray-100">
       <div
@@ -13,12 +13,12 @@ const sinpleProduct = (props: Props) => {
         className="h-80 bg-cover bg-no-repeat bg-fixed"
       >
         <div className="flex justify-center items-end py-20 w-full h-full bg-black opacity-80 space-y-16 text-white text-3xl">
-          Products Details
+          Our Products
         </div>
       </div>
-      <Product />
+      <OurProduct />
     </div>
   );
 };
 
-export default sinpleProduct;
+export default products;

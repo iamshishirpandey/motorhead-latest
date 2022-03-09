@@ -5,20 +5,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import ProductCard from "../Products/ProductCard";
+import { productObject } from "../productObject";
 
 type Props = {};
 
 const OurProduct = (props: Props) => {
-  const product = [
-    {
-      name: "MH 200 H",
-      price: "375000",
-    },
-    {
-      name: "MH 300 H",
-      price: "375000",
-    },
-  ];
   return (
     <>
       <div className="py-10 sm:py-20 px-5 lg:px-10  xl:px-28">
@@ -46,27 +37,11 @@ const OurProduct = (props: Props) => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard />
-          </SwiperSlide>
+          {productObject.map((item, index) => (
+            <SwiperSlide key={index}>
+              <ProductCard bike={item} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>
