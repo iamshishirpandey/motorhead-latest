@@ -8,7 +8,7 @@ const sinpleProduct = (props: Props) => {
     <div className="bg-gray-100">
       <div
         style={{
-          backgroundImage: `url("bike2.jpeg")`,
+          backgroundImage: `url("/bike2.jpeg")`,
         }}
         className="h-80 bg-cover bg-no-repeat bg-fixed"
       >
