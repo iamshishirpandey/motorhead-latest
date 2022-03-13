@@ -67,11 +67,11 @@ const Member = (props: Props) => {
                 </button>
               </div>
               <div className="grid grid-cols-2 gap-5">
-                <div className="flex flex-col space-y-4 items-center">
+                <div className="flex flex-col space-y-2 items-center">
                   <img
                     src={item.img}
                     alt={item.img}
-                    className="w-full h-72 bg-cover"
+                    className="w-full h-60 bg-content"
                   />
                   <h1 className="text-xl font-bold text-red-700">
                     {item.name}

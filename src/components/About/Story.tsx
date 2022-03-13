@@ -14,9 +14,7 @@ const Story = (props: Props) => {
               backgroundImage: `url("img1.jpeg")`,
             }}
           >
-            <div className="w-full h-full border p-5 flex items-end text-3xl font-bold text-white justify-center">
-              Our Story
-            </div>
+            <div className="w-full h-full border p-5 flex items-end text-3xl font-bold text-white justify-center"></div>
           </div>
           <div className="md:col-span-2">
             SLR Techno & Trade Pvt. Ltd. is a trading firm established in the

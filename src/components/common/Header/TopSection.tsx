@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BiTimeFive } from "react-icons/bi";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaFacebook, FaPhoneSquareAlt, FaYoutube } from "react-icons/fa";
 import Modal from "../loginAndRegister/Modal";
 
 const TopSection = () => {
@@ -15,11 +15,16 @@ const TopSection = () => {
           </div>
           <div className="flex space-x-2 items-center">
             <FaPhoneSquareAlt className="w-5 h-5 text-red-500" />
-            <span>Telephone: (+977) 01-5542934</span>
+            <a href="tel:+97701-5542934">Telephone: (+977) 01-5542934</a>
           </div>
         </div>
         <div className="flex space-x-5 items-center">
-          <button onClick={() => setOpen(true)}>Login / Register</button>
+          <a href="https://www.facebook.com/motorheadnepal">
+            <FaFacebook className="w-5 h-5 text-red-500" />
+          </a>
+          <a href="https://www.youtube.com/channel/UC21ew2fvgfvLURYWHsfwAaw">
+            <FaYoutube className="w-6 h-6 text-red-500" />
+          </a>
         </div>
       </div>
       <Modal open={open} setOpen={setOpen} />

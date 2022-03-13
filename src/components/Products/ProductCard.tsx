@@ -28,7 +28,11 @@ const ProductCard = (props: Props) => {
         >
           <div className=" -rotate-45 font-bold">New</div>
         </div>
-        <img src={bike.img[0]} className="w-full h-96" alt={bike.img[0]} />
+        <img
+          src={bike.img[0]}
+          className="w-full h-80 bg-cover"
+          alt={bike.img[0]}
+        />
         {/* {show && (
           <div className="-top-5 flex items-center justify-center absolute h-full w-full animate__animated animate__fadeUp animate__delay-3s">
             <BsPlus className="w-16 h-16 text-red-500" />
