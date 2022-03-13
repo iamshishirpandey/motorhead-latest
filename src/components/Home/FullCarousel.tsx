@@ -44,7 +44,7 @@ const FullCarousel = () => {
               backgroundImage: `${item.img}`,
             }}
             key={index}
-            className="h-screen bg-cover bg-center bg-no-repeat"
+            className="h-screen 2xl:h-1/2 bg-cover bg-center bg-no-repeat"
           >
             <div className="flex justify-center items-center w-full h-full bg-black opacity-80 space-y-16">
               <div className="text-white flex flex-col space-y-5">

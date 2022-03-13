@@ -5,9 +5,28 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { CustomLeftArrow, CustomRightArrow } from "../../../CarouselButton";
 
 type Props = {
   img: string[];
+};
+
+// const responsive = {
+//   xxxs: {
+//     breakpoint: { max: 425, min: 0 },
+//     items: 1,
+//   },
+// };
+const responsive = {
+  xxxs: {
+    breakpoint: {
+      max: 3000,
+      min: 0,
+    },
+    items: 1,
+  },
 };
 
 const Swipers = (props: Props) => {
@@ -17,24 +36,30 @@ const Swipers = (props: Props) => {
 
   return (
     <div className="bg-gray-100">
-      <Swiper
-        // loop={true}
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
-      >
-        {img.map((item, index) => (
-          <SwiperSlide key={index}>
-            <img src={item} alt={item} className="object-fill w-full h-96" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="">
+        <Carousel
+          responsive={responsive}
+          customRightArrow={<CustomRightArrow />}
+          customLeftArrow={<CustomLeftArrow />}
+          className="w-full"
+          infinite={true}
+        >
+          {img.map((item, index) => (
+            <div key={index}>
+              <img
+                src={item}
+                alt={item}
+                className="object-fill w-full h-auto"
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
+
       <Swiper
         onSwiper={() => setThumbsSwiper}
         // loop={true}
-        spaceBetween={10}
+        spaceBetween={5}
         slidesPerView={4}
         freeMode={true}
         watchSlidesProgress={true}
@@ -43,7 +68,7 @@ const Swipers = (props: Props) => {
       >
         {img.map((item, index) => (
           <SwiperSlide key={index}>
-            <img src={item} alt={item} className="w-full h-20 bg-cover" />
+            <img src={item} alt={item} className="w-full h-auto bg-cover" />
           </SwiperSlide>
         ))}
       </Swiper>
