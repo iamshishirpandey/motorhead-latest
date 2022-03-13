@@ -18,15 +18,15 @@ const responsive = {
   },
   two_xl: {
     breakpoint: { max: 3000, min: 1400 },
-    items: 5,
+    items: 3,
   },
   xl: {
     breakpoint: { max: 1400, min: 1260 },
-    items: 4.5,
+    items: 3,
   },
   lg: {
     breakpoint: { max: 1260, min: 1150 },
-    items: 4,
+    items: 3,
   },
   md: {
     breakpoint: { max: 1150, min: 878 },
@@ -60,7 +60,6 @@ const OurProduct = (props: Props) => {
   return (
     <>
       <div className="py-10 sm:py-20 px-5 lg:px-10  xl:px-28">
-        {/* <div> */}
         <div className="text-center text-4xl font-bold py-16 uppercase">
           OUR Products
         </div>
@@ -101,6 +100,7 @@ const OurProduct = (props: Props) => {
             customLeftArrow={<CustomLeftArrow />}
             containerClass="relative"
             className="w-full"
+            infinite={true}
           >
             {productObject.map((item, index) => (
               <div key={index} className="mr-1 sm:mr-5">

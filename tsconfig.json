@@ -21,7 +21,8 @@
     "**/**/*.tsx",
     "**/**/**/*.tsx",
     "**/*.ts",
-    "**/**/*.ts"
+    "**/**/*.ts",
+    "src/components/common/Header/navigation.js"
   ],
   "exclude": ["node_modules"]
 }
