@@ -14,11 +14,11 @@ const responsive = {
   three_xl: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 1,
+    items: 5.5,
   },
   two_xl: {
     breakpoint: { max: 3000, min: 1400 },
-    items: 3,
+    items: 5,
   },
   xl: {
     breakpoint: { max: 1400, min: 1260 },
@@ -29,28 +29,28 @@ const responsive = {
     items: 4,
   },
   md: {
-    breakpoint: { max: 1150, min: 778 },
-    items: 3.15,
+    breakpoint: { max: 1150, min: 878 },
+    items: 3,
   },
   sm: {
-    breakpoint: { max: 777, min: 665 },
+    breakpoint: { max: 877, min: 725 },
     items: 2.5,
   },
   xsm: {
-    breakpoint: { max: 664, min: 520 },
+    breakpoint: { max: 725, min: 620 },
     items: 2,
   },
   xs: {
-    breakpoint: { max: 519, min: 463 },
-    items: 1.75,
-  },
-  xxs: {
-    breakpoint: { max: 462, min: 368 },
+    breakpoint: { max: 620, min: 463 },
     items: 1.5,
   },
+  xxs: {
+    breakpoint: { max: 462, min: 425 },
+    items: 1.15,
+  },
   xxxs: {
-    breakpoint: { max: 367, min: 0 },
-    items: 1.25,
+    breakpoint: { max: 425, min: 0 },
+    items: 1,
   },
 };
 
@@ -103,7 +103,7 @@ const OurProduct = (props: Props) => {
             className="w-full"
           >
             {productObject.map((item, index) => (
-              <div key={index} className="mr-5">
+              <div key={index} className="mr-1 sm:mr-5">
                 <ProductCard bike={item} />
               </div>
             ))}
