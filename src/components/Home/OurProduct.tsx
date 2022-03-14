@@ -63,35 +63,6 @@ const OurProduct = (props: Props) => {
         <div className="text-center text-4xl font-bold py-16 uppercase">
           OUR Products
         </div>
-        {/* <Swiper
-          slidesPerView={1}
-          spaceBetween={20}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
-        >
-          {productObject.map((item, index) => (
-            <SwiperSlide key={index}>
-              <ProductCard bike={item} />
-            </SwiperSlide>
-          ))}
-        </Swiper> */}
 
         <div className="relative w-full">
           <Carousel

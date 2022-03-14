@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiTimeFive } from "react-icons/bi";
 import { FaFacebook, FaPhoneSquareAlt, FaYoutube } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 import Modal from "../loginAndRegister/Modal";
 
 const TopSection = () => {
@@ -18,8 +19,11 @@ const TopSection = () => {
           <a href="https://www.facebook.com/motorheadnepal">
             <FaFacebook className="w-5 h-5 text-red-500" />
           </a>
-          <a href="https://www.youtube.com/channel/UC21ew2fvgfvLURYWHsfwAaw">
+          <a href="https://www.youtube.com/channel/UCb7V1K8g3OZqS9xaFKpS9gg">
             <FaYoutube className="w-6 h-6 text-red-500" />
+          </a>
+          <a href="https://www.instagram.com/motorheadbikesnepal/">
+            <RiInstagramFill className="w-6 h-6 text-red-500" />
           </a>
         </div>
       </div>
