@@ -41,7 +41,7 @@ const Map = (props: Props) => {
         <div className="gmap_canvas">
           <iframe
             width="100%"
-            height="400"
+            height="500"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=Motorhead%20Bikes%20Nepal%20SLR%20Techno%20and%20Trade%20Pvt.%20Ltd.&t=&z=13&ie=UTF8&iwloc=&output=embed"
             scrolling="no"

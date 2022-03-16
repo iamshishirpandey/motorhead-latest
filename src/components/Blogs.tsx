@@ -4,7 +4,6 @@ import SideBar from "../components/Products/sideBar";
 const Blogs = (props: any) => {
   const images = [
     "event1.jpg",
-    "event2.jpg",
     "event3.jpg",
     "event4.jpg",
     "event5.jpg",
@@ -32,7 +31,7 @@ const Blogs = (props: any) => {
               alt={item}
               className={`${
                 show && ind === index ? "p-0" : "p-5"
-              }   w-full h-64 ease-in-out duration-300`}
+              }   w-full h-auto ease-in-out duration-300 bg-cover top-0`}
               onMouseOver={() => {
                 setShow(true);
                 setInd(index);

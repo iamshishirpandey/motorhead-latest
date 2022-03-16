@@ -57,4 +57,16 @@ export const productObject = [
     ],
     price: "3,90,000/-",
   },
+  {
+    name: "MH150R",
+    img: [
+      "/MH150R.jpg",
+      "/MH150R.jpg",
+      "/MH150R.jpg",
+      "/MH150R.jpg",
+      "/MH150R.jpg",
+      "/MH150R.jpg",
+    ],
+    price: "3,05,000/-",
+  },
 ];
