@@ -18,10 +18,10 @@ const Blogs = (props: any) => {
       <div className="md:col-span-2 sm:p-5 lg:p-10 bg-white rounded space-y-5 lg:space-y-10">
         <div className="p-5 sm:p-0 space-y-2">
           <h1 className=" text-2xl text-red-700">
-            Pokhara Showroom Opening Ceremony
+            Authorized Service Provider
           </h1>
           <p className="text-lg text-gray-500">
-            MotorHead Motorcycle Showroom Opened in Pokhara - Magh 1, 2076.
+            Authorized Service Provider Opening in Chahabil on Poush 15, 2078.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 ">
