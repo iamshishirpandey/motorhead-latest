@@ -66,7 +66,7 @@ const Member = (props: Props) => {
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid sm:grid-cols-2 gap-5">
                 <div className="flex flex-col space-y-2 items-center">
                   <img
                     src={item.img}
