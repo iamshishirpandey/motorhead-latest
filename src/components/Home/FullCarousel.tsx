@@ -12,7 +12,7 @@ const FullCarousel = () => {
       description:
         "Everything you could possibly need to onboard talent and to cover patient care. Your need for a healthcare professional, or you being one-we are one-stop for it all. Healthcare Total Talent Solutions is who we are.",
       button1: "Get In Touch",
-      img: `url("bike2.jpeg")`,
+      img: `url("MH200X.jpg")`,
     },
     {
       title: "Tekken R250 ",
@@ -21,7 +21,7 @@ const FullCarousel = () => {
       description:
         "Everything you could possibly need to onboard talent and to cover patient care. Your need for a healthcare professional, or you being one-we are one-stop for it all. Healthcare Total Talent Solutions is who we are.",
       button1: "Get In Touch",
-      img: `url("bike2.jpeg")`,
+      img: `url("tekken250.jpg")`,
     },
   ];
   return (
@@ -46,7 +46,7 @@ const FullCarousel = () => {
             key={index}
             className="h-screen 2xl:h-full bg-cover bg-center bg-no-repeat"
           >
-            <div className="flex justify-center items-center w-full h-full bg-black opacity-80 space-y-16 2xl:py-96">
+            <div className="flex justify-center items-center w-full h-full bg-black bg-opacity-90 space-y-16 2xl:py-96">
               <div className="text-white flex flex-col space-y-5">
                 <div className="text-3xl sm:text-5xl md:text-7xl uppercase font-bold animate__animated animate__fadeInDownBig">
                   {item.title}
