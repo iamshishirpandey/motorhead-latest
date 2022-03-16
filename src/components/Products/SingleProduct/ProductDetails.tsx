@@ -9,7 +9,6 @@ type Props = {
 
 const ProductDetails = (props: Props) => {
   const { bike } = props;
-  console.log(bike);
   return (
     <div className="bg-gray-100 lg:p-10 xl:px-28 xl:py-16 ">
       <div className="bg-white p-5 lg:p-10 rounded grid grid-cols-1 md:grid-cols-2 items-center gap-10">

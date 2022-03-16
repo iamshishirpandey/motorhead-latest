@@ -6,7 +6,6 @@ import MobDiscloser from "./MobDiscloser";
 import ProductDetails from "./ProductDetails";
 
 const Product = () => {
-  console.log(productObject);
   const Router = useRouter();
   const flightModel = Router.query.name;
 
@@ -18,13 +17,13 @@ const Product = () => {
     });
 
     setData(flightdata);
-    console.log(flightdata);
+    console.log(data);
   }, [flightModel]);
   return (
     <>
       {data && data[0] && <ProductDetails bike={data[0]} />}
       <div className="hidden sm:block">
-        <Details />
+        {data && data[0] && <Details bike={data[0]} />}
       </div>
       <div className="block sm:hidden">
         <MobDiscloser />

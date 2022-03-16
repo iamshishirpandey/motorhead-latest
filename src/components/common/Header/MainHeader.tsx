@@ -20,7 +20,7 @@ const MainHeader = () => {
         screen
           ? "fixed top-0  w-full h-20 animate__animated animate__fadeInDown"
           : "absolute top-0 lg:top-14 h-24 lg:h-32 lg:bg-opacity-40"
-      } px-5 left-0 right-0 lg:px-10 xl:px-28 flex justify-between items-center  space-x-0 xl:space-x-8  overflow-hidden bg-black shadow-xl`}
+      } px-5 mx-auto max-w-[1440px] left-0 right-0 lg:px-10 xl:px-28 flex justify-between items-center  space-x-0 xl:space-x-8  overflow-hidden bg-black shadow-xl`}
       aria-label="Global"
     >
       <Link passHref href={"/"}>

@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import SideBar from "../components/Products/sideBar";
 
 const Blogs = (props: any) => {
-  const images = ["bike1.jpeg", "bike1.jpeg"];
+  const images = [
+    "event1.jpg",
+    "event2.jpg",
+    "event3.jpg",
+    "event4.jpg",
+    "event5.jpg",
+    "event6.jpg",
+  ];
   const [show, setShow] = useState(false);
   const [ind, setInd] = useState(0);
   console.log("Test");
@@ -21,11 +28,11 @@ const Blogs = (props: any) => {
           {images.map((item, index) => (
             <img
               key={index}
-              src="/bike1.jpeg"
-              alt="bike1"
+              src={item}
+              alt={item}
               className={`${
                 show && ind === index ? "p-0" : "p-5"
-              }   w-full h-72 ease-in-out duration-300`}
+              }   w-full h-64 ease-in-out duration-300`}
               onMouseOver={() => {
                 setShow(true);
                 setInd(index);

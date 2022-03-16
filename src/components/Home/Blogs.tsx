@@ -10,11 +10,6 @@ const Blogs = (props: Props) => {
         News & Events
       </div>
       <div className="text-center w-full flex flex-col justify-center items-center space-y-5">
-        {/* <p className="lowercase text-sm text-gray-500  w-1/2">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpa
-        </p> */}
         <BlogCard />
       </div>
     </div>

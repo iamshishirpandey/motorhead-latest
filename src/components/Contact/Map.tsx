@@ -43,7 +43,7 @@ const Map = (props: Props) => {
             width="100%"
             height="400"
             id="gmap_canvas"
-            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Motorhead%20Bikes%20Nepal%20SLR%20Techno%20and%20Trade%20Pvt.%20Ltd.&t=&z=13&ie=UTF8&iwloc=&output=embed"
             scrolling="no"
           ></iframe>
         </div>

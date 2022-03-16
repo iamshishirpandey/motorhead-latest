@@ -6,9 +6,12 @@ import {
   UsersIcon,
 } from "@heroicons/react/solid";
 
-type Props = {};
-
+type Props = {
+  bike: any;
+};
 const Details = (props: Props) => {
+  const { bike } = props;
+  console.log(bike);
   const [show, setShow] = useState(1);
   const tabs = [
     {
@@ -17,7 +20,7 @@ const Details = (props: Props) => {
       href: "#",
       current: true,
       details: [
-        "Model: TEKKEN 250",
+        "Model: TEKKEN R250",
         "Displacement: 250cc with inner balancer",
         "LWHmm: 2145*850*1175",
         "WheelBase/mm: 1390",

@@ -6,7 +6,7 @@ import "animate.css";
 const FullCarousel = () => {
   const contant = [
     {
-      title: "MX15",
+      title: "MH200X",
       name1: "Reliable Staffing, ",
       name2: "Healthcare Workforce Management",
       description:
@@ -15,7 +15,7 @@ const FullCarousel = () => {
       img: `url("bike2.jpeg")`,
     },
     {
-      title: "Takken 250 RR",
+      title: "Tekken R250 ",
       name1: "Reliable Staffing, ",
       name2: "Healthcare Workforce Management",
       description:
@@ -44,9 +44,9 @@ const FullCarousel = () => {
               backgroundImage: `${item.img}`,
             }}
             key={index}
-            className="h-screen 2xl:h-1/2 bg-cover bg-center bg-no-repeat"
+            className="h-screen 2xl:h-full bg-cover bg-center bg-no-repeat"
           >
-            <div className="flex justify-center items-center w-full h-full bg-black opacity-80 space-y-16">
+            <div className="flex justify-center items-center w-full h-full bg-black opacity-80 space-y-16 2xl:py-96">
               <div className="text-white flex flex-col space-y-5">
                 <div className="text-3xl sm:text-5xl md:text-7xl uppercase font-bold animate__animated animate__fadeInDownBig">
                   {item.title}

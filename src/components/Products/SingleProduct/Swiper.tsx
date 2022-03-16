@@ -13,12 +13,6 @@ type Props = {
   img: string[];
 };
 
-// const responsive = {
-//   xxxs: {
-//     breakpoint: { max: 425, min: 0 },
-//     items: 1,
-//   },
-// };
 const responsive = {
   xxxs: {
     breakpoint: {
@@ -32,7 +26,6 @@ const responsive = {
 const Swipers = (props: Props) => {
   const { img } = props;
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  console.log(img);
 
   return (
     <div className="bg-gray-100">

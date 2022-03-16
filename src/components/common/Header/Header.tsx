@@ -4,12 +4,12 @@ import TopSection from "./TopSection";
 
 const Header = () => {
   return (
-    <>
-      <div className="hidden lg:block">
+    <div className="mx-auto max-w-[1440px]">
+      <div className="hidden lg:block ">
         <TopSection />
       </div>
       <MainHeader />
-    </>
+    </div>
   );
 };
 export default Header;
