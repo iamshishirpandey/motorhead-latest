@@ -33,11 +33,6 @@ const ProductCard = (props: Props) => {
           className="w-full h-64 sm:h-72 lg:h-80 bg-cover"
           alt={bike.img[0]}
         />
-        {/* {show && (
-          <div className="-top-5 flex items-center justify-center absolute h-full w-full animate__animated animate__fadeUp animate__delay-3s">
-            <BsPlus className="w-16 h-16 text-red-500" />
-          </div>
-        )} */}
 
         <div className="p-5 capitalize">
           <div className="text-xl font-light">MRP - Rs.{bike.price}</div>

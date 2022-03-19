@@ -10,7 +10,11 @@ const Contact = (props: Props) => {
       <ul className="space-y-7">
         <li className="flex space-x-3 items-center">
           <MdLocationOn className="w-8 h-8 text-red-700" />
-          <a href="https://www.google.com/maps/place/Motorhead+Bikes+Nepal+SLR+Techno+and+Trade+Pvt.+Ltd./@27.6781398,85.3003249,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb1998695213ed:0x66c8c83b36688fa0!8m2!3d27.6781381!4d85.3026017">
+          <a
+            href="https://www.google.com/maps/place/Motorhead+Bikes+Nepal+SLR+Techno+and+Trade+Pvt.+Ltd./@27.6781398,85.3003249,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb1998695213ed:0x66c8c83b36688fa0!8m2!3d27.6781381!4d85.3026017"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Kalanga Complex, Dhobighat, Lalitpur
           </a>
         </li>
