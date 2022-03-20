@@ -13,9 +13,10 @@ const Blogs = (props: Props) => {
     "event6.jpg",
   ];
   const [show, setShow] = useState(false);
+  const [showImg, setImgShow] = useState("");
+
   const [ind, setInd] = useState(0);
   const [open, setOpen] = useState(false);
-  console.log(open);
 
   return (
     <>
@@ -49,14 +50,17 @@ const Blogs = (props: Props) => {
                   setInd(index);
                 }}
                 onMouseLeave={() => setShow(false)}
-                onClick={() => setOpen(true)}
+                onClick={() => {
+                  setOpen(true);
+                  setImgShow(item);
+                }}
               />
             ))}
           </div>
         </div>
       </div>
 
-      <ImgModel open={open} setOpen={setOpen} />
+      <ImgModel open={open} setOpen={setOpen} showImg={showImg} />
     </>
   );
 };
