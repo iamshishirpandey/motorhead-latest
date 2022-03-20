@@ -3,7 +3,7 @@ import { BiSearch } from "react-icons/bi";
 import { navigation } from "../common/Header/navigation";
 
 type Props = {
-  setFilter: React.Dispatch<React.SetStateAction<string>>;
+  setFilter?: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const SideBar = (props: Props) => {
@@ -17,12 +17,21 @@ const SideBar = (props: Props) => {
         <span className="w-0.5 h-4 bg-red-700 rounded-b-full absolute top-0 left-5"></span>
         <h1 className="text-xl font-bold uppercase">Search</h1>
         <form className="bg-gray-200  flex justify-center items-center border px-3 rounded">
-          <input
-            type="text"
-            className="outline-none w-full p-2 bg-gray-200"
-            placeholder="Search"
-            onKeyUp={(e) => setFilter(e.target.value)}
-          />
+          {setFilter ? (
+            <input
+              type="text"
+              className="outline-none w-full p-2 bg-gray-200"
+              placeholder="Search"
+              onChange={(e) => setFilter(e.target.value)}
+            />
+          ) : (
+            <input
+              type="text"
+              className="outline-none w-full p-2 bg-gray-200"
+              placeholder="Search"
+            />
+          )}
+
           <button type="submit">
             <BiSearch className="w-5 h-5" />
           </button>

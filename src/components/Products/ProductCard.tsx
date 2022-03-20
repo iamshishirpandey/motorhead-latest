@@ -43,20 +43,18 @@ const ProductCard = (props: Props) => {
             show ? "flex" : "hidden"
           } absolute bottom-0 left-0 h-24 right-0 p-5 justify-center bg-zinc-200 animate__animated animate__fadeInUp animate__faster`}
         >
-          <Link passHref href={`products/details/${bike.name}`}>
-            <button
-              className="bg-white capitalize flex justify-center items-center h-12 pl-4 px-2 text-zinc-400 hover:bg-red-700 hover:text-white  shadow border rounded-md"
-              onMouseOver={() => setShowbutton(true)}
-              onMouseLeave={() => setShowbutton(false)}
-            >
-              <span>view</span>
-              <BsFillEyeFill
-                className={`${
-                  showbutton ? "text-white" : "text-zinc-400"
-                } w-9 h-9  p-2`}
-              />
-            </button>
-          </Link>
+          <button
+            className="bg-white capitalize flex justify-center items-center h-12 pl-4 px-2 text-zinc-400 hover:bg-red-700 hover:text-white  shadow border rounded-md"
+            onMouseOver={() => setShowbutton(true)}
+            onMouseLeave={() => setShowbutton(false)}
+          >
+            <span>view</span>
+            <BsFillEyeFill
+              className={`${
+                showbutton ? "text-white" : "text-zinc-400"
+              } w-9 h-9  p-2`}
+            />
+          </button>
         </div>
       </div>
     </Link>
