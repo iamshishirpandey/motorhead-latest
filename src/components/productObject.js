@@ -9,7 +9,7 @@ export const productObject = [
       "/MH200X.jpg",
       "/MH200X.jpg",
     ],
-    price: "3,05,000/-",
+    price: "3,75,000/-",
   },
   {
     name: "Scrambler 250",
