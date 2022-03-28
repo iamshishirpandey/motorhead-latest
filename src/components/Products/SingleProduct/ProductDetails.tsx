@@ -18,32 +18,19 @@ const ProductDetails = (props: Props) => {
           <p className="text-lg font-medium">
             <span className="text-xl font-bold">MRP Rs. {bike.price}</span>
           </p>
-          <p className="text-sm text-gray-500">
-            Featuring an attractive graphics, Tekken 250 consists of the double
-            exhaust with steel muffler pipes. The seat height of 820mm provides
-            a tall and comfortable riding posture to the crossover. The bike
-            consists of a fuel tank of 14 liters with an expected mileage of
-            around 40kmpl.
-          </p>
+          <p className="text-sm text-gray-500">{bike.description}</p>
           <div className="grid grid-cols-2 md:grid-cols-3  gap-3">
             <span className="text-lg">Model:</span>
             <span className="md:col-span-2 text-gray-700 font-light">
-              {" "}
-              TEKKEN 250
+              {bike.name}
             </span>
             <span className="text-lg">Displacement :</span>
             <span className="md:col-span-2 text-gray-700 font-light">
-              {" "}
-              250cc with inner balancer
+              {bike.displacement}
             </span>
             <span className="text-lg">L*W*H／mm :</span>
             <span className="md:col-span-2 text-gray-700 font-light">
-              2145*850*1175
-            </span>
-            <span className="text-lg">TAG :</span>
-            <span className="md:col-span-2 text-gray-700 font-light">
-              {" "}
-              AGV, Full-face
+              {bike.lwh_mm}
             </span>
           </div>
         </div>

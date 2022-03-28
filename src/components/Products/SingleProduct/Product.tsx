@@ -26,7 +26,7 @@ const Product = () => {
         {data && data[0] && <Details bike={data[0]} />}
       </div>
       <div className="block sm:hidden">
-        <MobDiscloser />
+        {data && data[0] && <MobDiscloser bike={data[0]} />}
       </div>
     </>
   );
