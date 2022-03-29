@@ -13,8 +13,9 @@ const MobDiscloser = (props: Props) => {
   return (
     <div className="w-full">
       <div className="w-full  py-5 bg-white">
-        {bike.tabs &&
-          bike.tabs[0] &&
+        {tabs &&
+          tabs[0] &&
+          //@ts-ignore
           tabs.map((item, index: React.Key | null | undefined) => (
             <Disclosure key={index}>
               {({ open }) => (
