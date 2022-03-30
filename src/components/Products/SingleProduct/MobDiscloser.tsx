@@ -29,7 +29,16 @@ const MobDiscloser = (props: Props) => {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                    {item.details}
+                    <div>
+                      {item.details.map(
+                        (
+                          singleDetails: {} | null | undefined,
+                          index: React.Key | null | undefined
+                        ) => (
+                          <div key={index}>{singleDetails}</div>
+                        )
+                      )}
+                    </div>
                   </Disclosure.Panel>
                 </>
               )}
