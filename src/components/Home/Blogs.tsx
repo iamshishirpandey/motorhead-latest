@@ -24,9 +24,7 @@ const Blogs = (props: Props) => {
         <div className="sm:text-center text-4xl font-bold py-16 uppercase">
           News & Events
         </div>
-        {/* <div className="text-center w-full flex flex-col justify-center items-center space-y-5">
-        <BlogCard />
-      </div> */}
+
         <div className="md:col-span-2 sm:p-5 lg:p-10 bg-white rounded space-y-5 lg:space-y-10">
           <div className="space-y-2">
             <h1 className=" text-2xl text-red-700">
