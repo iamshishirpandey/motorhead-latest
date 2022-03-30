@@ -24,21 +24,19 @@ const MobDiscloser = (props: Props) => {
                     <span>{item.name}</span>
                     <ChevronUpIcon
                       className={`${
-                        open ? "transform rotate-180" : ""
+                        !open ? "transform rotate-180" : ""
                       } w-5 h-5 text-gray-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                    <div>
-                      {item.details.map(
-                        (
-                          singleDetails: {} | null | undefined,
-                          index: React.Key | null | undefined
-                        ) => (
-                          <div key={index}>{singleDetails}</div>
-                        )
-                      )}
-                    </div>
+                    {item.details.map(
+                      (
+                        singleDetails: {} | null | undefined,
+                        index: React.Key | null | undefined
+                      ) => (
+                        <div key={index}>{singleDetails}</div>
+                      )
+                    )}
                   </Disclosure.Panel>
                 </>
               )}
