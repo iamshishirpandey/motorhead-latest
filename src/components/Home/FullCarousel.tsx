@@ -46,7 +46,7 @@ const FullCarousel = () => {
             key={index}
             className="h-screen 2xl:h-full bg-cover bg-center bg-no-repeat"
           >
-            <div className="flex justify-center items-center w-full h-full bg-black bg-opacity-90 space-y-16 2xl:py-96">
+            <div className="flex justify-center items-center w-full h-full bg-black bg-opacity-70 space-y-16 2xl:py-96">
               <div className="text-white flex flex-col space-y-5">
                 <div className="text-3xl sm:text-5xl md:text-7xl uppercase font-bold animate__animated animate__fadeInDownBig">
                   {item.title}

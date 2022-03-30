@@ -10,28 +10,28 @@ const ContactForm = (props: Props) => {
         <form action="" className="space-y-5 text-gray-500">
           <div className="grid md:grid-cols-2 gap-5">
             <label className="flex space-x-5 items-center text-gray-800">
-              <span className="w-20">Name</span>
+              <span className="w-36  text-sm font-medium">Name</span>
               <input
                 type="text"
                 className="w-full p-3 border-2 border-gray-100 rounded"
               />
             </label>
             <label className="flex space-x-5 items-center text-gray-800">
-              <span className="w-20">Email</span>
+              <span className="w-36 text-sm font-medium">Email</span>
               <input
                 type="email"
                 className="w-full p-3 border-2 border-gray-100 rounded"
               />
             </label>
             <label className="flex space-x-5 items-center text-gray-800">
-              <span className="w-20">Phone Number</span>
+              <span className="w-36 text-sm font-medium">Phone Number</span>
               <input
                 type="text"
                 className="w-full p-3 border-2 border-gray-100 rounded"
               />
             </label>
             <label className="flex space-x-5 items-center text-gray-800">
-              <span className="w-20">Subject</span>
+              <span className="w-36 text-sm font-medium">Subject</span>
               <input
                 type="text"
                 className="w-full p-3 border-2 border-gray-100 rounded"
