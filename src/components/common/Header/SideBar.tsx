@@ -15,7 +15,7 @@ const SideBar = (props: Props) => {
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
-            className="fixed inset-0 flex z-40 xl:hidden overflow-y-scroll"
+            className="fixed inset-0 flex z-40  xl:hidden overflow-y-scroll"
             onClose={setSidebarOpen}
           >
             <Transition.Child
@@ -27,7 +27,7 @@ const SideBar = (props: Props) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="inset-0 bg-gray-600 bg-opacity-75" />
+              <Dialog.Overlay className="inset-0 bg-gray-900 bg-opacity-90" />
             </Transition.Child>
             <Transition.Child
               as={Fragment}
@@ -38,39 +38,41 @@ const SideBar = (props: Props) => {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className="relative z-50 flex-1 flex flex-col max-w-xs w-full bg-gray-800 shadow-xl">
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-in-out duration-300"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="ease-in-out duration-300"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <div className="absolute top-0 right-0 -mr-16 pt-6">
-                    <button
-                      type="button"
-                      className="ml-1 flex items-center justify-center h-10 w-10"
-                      onClick={() => setSidebarOpen(false)}
-                    >
-                      <XIcon
-                        className="h-10 w-10 text-white"
-                        aria-hidden="true"
-                      />
-                    </button>
-                  </div>
-                </Transition.Child>
-                <div className="flex-shrink-0 flex">
-                  <div className="justify-center w-full flex-shrink-0 space-y-6 group">
-                    <div className="w-full flex justify-center pt-5">
-                      <img src="logo.png" alt="" className="h-16" />
+              <div className="w-full relative h-screen bg-gray-800 shadow-xl">
+                <div className=" z-50 flex-1 flex flex-col">
+                  <Transition.Child
+                    as={Fragment}
+                    enter="ease-in-out duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="ease-in-out duration-300"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="absolute top-0 right-0 mr-4 pt-6">
+                      <button
+                        type="button"
+                        className="ml-1 flex items-center justify-center h-10 w-10"
+                        onClick={() => setSidebarOpen(false)}
+                      >
+                        <XIcon
+                          className="h-10 w-10 text-white"
+                          aria-hidden="true"
+                        />
+                      </button>
                     </div>
-                    <nav className="space-y-1 w-full">
-                      <ul className="text-center p-5 text-lg">
-                        <Nav />
-                      </ul>
-                    </nav>
+                  </Transition.Child>
+                  <div className="flex-shrink-0 flex">
+                    <div className="justify-center w-full flex-shrink-0 space-y-6 group">
+                      <div className="w-44 flex justify-center pt-5">
+                        <img src="logo.png" alt="" className="h-16" />
+                      </div>
+                      <nav className="space-y-1 w-44">
+                        <ul className="text-center p-5 text-lg">
+                          <Nav />
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
                 </div>
               </div>
