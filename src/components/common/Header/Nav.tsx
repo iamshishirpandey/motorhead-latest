@@ -4,10 +4,11 @@ import { navigation } from "./navigation";
 
 type Props = {
   setSidebarOpen: any;
+  sidebarOpen: boolean;
 };
 
 const Nav = (props: Props) => {
-  const { setSidebarOpen } = props;
+  const { setSidebarOpen, sidebarOpen } = props;
   const [show, setShow] = useState(1);
   function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
@@ -21,7 +22,9 @@ const Nav = (props: Props) => {
               href={item.href}
               onClick={() => {
                 setShow(item.id);
-                setSidebarOpen(false);
+                if (sidebarOpen) {
+                  setSidebarOpen(false);
+                }
               }}
               className="inline-flex  items-center font-semibold capitalize text-sm text-white"
               aria-current={item.current ? "page" : undefined}

@@ -69,7 +69,10 @@ const SideBar = (props: Props) => {
                       </div>
                       <nav className="space-y-1 w-44">
                         <ul className="text-center p-5 text-lg">
-                          <Nav setSidebarOpen={setSidebarOpen} />
+                          <Nav
+                            setSidebarOpen={setSidebarOpen}
+                            sidebarOpen={sidebarOpen}
+                          />
                         </ul>
                       </nav>
                     </div>
