@@ -12,7 +12,7 @@ const FullCarousel = () => {
       description:
         "Everything you could possibly need to onboard talent and to cover patient care. Your need for a healthcare professional, or you being one-we are one-stop for it all. Healthcare Total Talent Solutions is who we are.",
       button1: "Get In Touch",
-      img: `url("MH200X.jpg")`,
+      img: `url("MH200X1.jpg")`,
     },
     {
       title: "Tekken R250 ",
