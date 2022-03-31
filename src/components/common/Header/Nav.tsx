@@ -22,9 +22,9 @@ const Nav = (props: Props) => {
               href={item.href}
               onClick={() => {
                 setShow(item.id);
-                if (sidebarOpen) {
-                  setSidebarOpen(false);
-                }
+                // if (sidebarOpen) {
+                //   setSidebarOpen(false);
+                // }
               }}
               className="inline-flex  items-center font-semibold capitalize text-sm text-white"
               aria-current={item.current ? "page" : undefined}
