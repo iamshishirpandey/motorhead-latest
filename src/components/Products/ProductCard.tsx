@@ -30,7 +30,7 @@ const ProductCard = (props: Props) => {
         </div>
         <img
           src={bike.img[0]}
-          className="w-full h-64 sm:h-72 lg:h-80 bg-cover"
+          className="w-full h-64 xs:h-72 lg:h-80 bg-cover"
           alt={bike.img[0]}
         />
 
