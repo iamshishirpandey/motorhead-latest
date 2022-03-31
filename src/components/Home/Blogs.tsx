@@ -34,7 +34,7 @@ const Blogs = (props: Props) => {
               Authorized Service Provider Opening in Chahabil on Poush 15, 2078.
             </p>
           </div>
-          <div className="grid xs:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0">
             {images.map((item, index) => (
               <img
                 key={index}

@@ -36,20 +36,19 @@ const Teams = (props: Props) => {
           <div className="text-center text-3xl font-bold">OUR MEMBERS</div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-16">
             {teams.map((item, index) => (
-              <>
-                <div
-                  onClick={() => member(index)}
-                  className="w-full h-80 sm:w-auto sm:h-72 bg-center cursor-pointer bg-cover"
-                  style={{
-                    backgroundImage: `url(${item.img})`,
-                  }}
-                >
-                  <div className="inset-0 w-full h-full flex flex-col justify-end rounded text-white font-bold p-4 bg-black bg-opacity-20">
-                    <span className="font text-2xl">{item.name}</span>
-                    <span className="text-sm">{item.post}</span>
-                  </div>
+              <div
+                key={index}
+                onClick={() => member(index)}
+                className="w-full h-80 sm:w-auto sm:h-72 bg-center cursor-pointer bg-cover"
+                style={{
+                  backgroundImage: `url(${item.img})`,
+                }}
+              >
+                <div className="inset-0 w-full h-full flex flex-col justify-end rounded text-white font-bold p-4 bg-black bg-opacity-20">
+                  <span className="font text-2xl">{item.name}</span>
+                  <span className="text-sm">{item.post}</span>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>
