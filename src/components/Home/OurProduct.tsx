@@ -60,7 +60,7 @@ const OurProduct = (props: Props) => {
   return (
     <>
       <div className="py-10 sm:py-20 px-5 lg:px-10  xl:px-28">
-        <div className="sm:text-center text-4xl font-bold py-16 uppercase">
+        <div className="sm:text-center text-3xl sm:text-4xl font-bold py-8 ms:py-16 uppercase">
           OUR Products
         </div>
 

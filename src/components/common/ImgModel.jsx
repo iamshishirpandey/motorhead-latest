@@ -15,7 +15,7 @@ const ImgModel = (props) => {
         onClose={() => setOpen(false)}
         open={open}
       >
-        <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -43,12 +43,12 @@ const ImgModel = (props) => {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="inline-block relative align-bottom rounded-lg text-left  shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full ">
+            <div className="inline-block relative align-bottom rounded-lg m-5 sm:m-8 text-left  shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full ">
               <button
-                className="absolute top-0 right-0 -mr-12 -mt-2"
+                className="absolute top-0 right-0 -mr-8 md:-mr-12 md:-mt-2"
                 onClick={() => setOpen(false)}
               >
-                <XIcon className="w-10 h-10 text-white" />
+                <XIcon className="w-7 sm:w-10 h-7 sm:h-10 text-white" />
               </button>
               <img src={showImg} alt="showImg" className="rounded" />
             </div>

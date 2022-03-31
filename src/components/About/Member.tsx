@@ -71,7 +71,7 @@ const Member = (props: Props) => {
                   <img
                     src={item.img}
                     alt={item.img}
-                    className="w-full h-60 bg-content"
+                    className="w-full h-auto sm:w-full sm:h-60 bg-content"
                   />
                   <h1 className="text-xl font-bold text-red-700">
                     {item.name}

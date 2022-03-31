@@ -2,9 +2,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { navigation } from "./navigation";
 
-const Nav = () => {
-  const [show, setShow] = useState(1);
+type Props = {
+  setSidebarOpen: any;
+};
 
+const Nav = (props: Props) => {
+  const { setSidebarOpen } = props;
+  const [show, setShow] = useState(1);
   function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
   }
@@ -14,7 +18,11 @@ const Nav = () => {
         {navigation.map((item) => (
           <Link key={item.name} href={item.href}>
             <a
-              onClick={() => setShow(item.id)}
+              href={item.href}
+              onClick={() => {
+                setShow(item.id);
+                setSidebarOpen(false);
+              }}
               className="inline-flex  items-center font-semibold capitalize text-sm text-white"
               aria-current={item.current ? "page" : undefined}
             >

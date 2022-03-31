@@ -39,7 +39,7 @@ const Teams = (props: Props) => {
               <>
                 <div
                   onClick={() => member(index)}
-                  className="h-72 bg-center cursor-pointer bg-cover"
+                  className="w-full h-80 sm:w-auto sm:h-72 bg-center cursor-pointer bg-cover"
                   style={{
                     backgroundImage: `url(${item.img})`,
                   }}

@@ -21,20 +21,20 @@ const Blogs = (props: Props) => {
   return (
     <>
       <div className="pb-10 sm:pb-20 px-5  lg:px-10  xl:px-28">
-        <div className="sm:text-center text-4xl font-bold py-16 uppercase">
+        <div className="sm:text-center text-3xl sm:text-4xl font-bold py-8 sm:py-16 uppercase">
           News & Events
         </div>
 
         <div className="md:col-span-2 sm:p-5 lg:p-10 bg-white rounded space-y-5 lg:space-y-10">
           <div className="space-y-2">
-            <h1 className=" text-2xl text-red-700">
+            <h1 className="text-xl md:text-2xl text-red-700">
               Authorized Service Provider
             </h1>
-            <p className="text-lg text-gray-500">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-500">
               Authorized Service Provider Opening in Chahabil on Poush 15, 2078.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0">
             {images.map((item, index) => (
               <img
                 key={index}
