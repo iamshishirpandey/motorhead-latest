@@ -60,7 +60,7 @@ const Swipers = (props: Props) => {
         className="mySwiper"
       >
         {img.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={item}>
             <img src={item} alt={item} className="w-full h-auto bg-cover" />
           </SwiperSlide>
         ))}
