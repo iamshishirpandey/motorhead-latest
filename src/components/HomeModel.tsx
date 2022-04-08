@@ -19,6 +19,7 @@ const HomeModel = (props: Props) => {
   const [selected, setSelected] = useState("");
   console.log(selected);
   const { open, setOpen } = props;
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -96,6 +97,7 @@ const HomeModel = (props: Props) => {
                         .sendForm(
                           "service_76bvuor",
                           "template_vefo0ch",
+                          //@ts-ignore
                           e.target,
                           "3tOjgQYDS_3oNxS_u"
                         )
