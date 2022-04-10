@@ -43,13 +43,6 @@ const ContactForm = (props: Props) => {
           "service_76bvuor",
           "template_vefo0ch",
           //@ts-ignore
-          //   {
-          //     name: values.name,
-          //     email: values.email,
-          //     number: values.number,
-          //     address: values.address,
-          //     productName: values.productName,
-          //   },
           form.current,
 
           "3tOjgQYDS_3oNxS_u"
@@ -72,54 +65,80 @@ const ContactForm = (props: Props) => {
         onSubmit={formik.handleSubmit}
       >
         <div className="lg:w-3/4 space-y-4">
-          <input
-            type={"text"}
-            name="name"
-            className="border p-2 px-2 w-full bg-transparent rounded bg-white"
-            placeholder="Enter your name*"
-            onChange={formik.handleChange}
-            value={formik.values.name}
-          />
-          <input
-            type={"email"}
-            name="email"
-            className="border p-2 px-2 w-full bg-transparent rounded bg-white"
-            placeholder="Enter your email*"
-            onChange={formik.handleChange}
-            value={formik.values.email}
-          />
-          <input
-            type={"text"}
-            name="number"
-            className="border p-2 px-2 w-full bg-transparent rounded bg-white"
-            placeholder="Enter your contact number*"
-            onChange={formik.handleChange}
-            value={formik.values.number}
-          />
-          <input
-            type={"text"}
-            name="address"
-            className="border p-2 px-2 w-full bg-transparent rounded bg-white"
-            placeholder="Enter your address*"
-            onChange={formik.handleChange}
-            value={formik.values.address}
-          />
-
-          <select
-            name="productName"
-            className="border p-2 px-2 w-full bg-transparent rounded bg-white text-gray-400"
-            value={formik.values.productName}
-            onChange={formik.handleChange}
-          >
-            <option value="default" hidden>
-              Bikes you are interested in*
-            </option>
-            {imageTransparent.map((item) => (
-              <option key={item.name} value={item.name}>
-                {item.name}
+          <div className="">
+            <input
+              type={"text"}
+              name="name"
+              className="border p-2 px-2 w-full bg-transparent rounded bg-white"
+              placeholder="Enter your name*"
+              onChange={formik.handleChange}
+              value={formik.values.name}
+            />
+            {formik.touched.name && formik.errors.name ? (
+              <div className="text-xs text-red-700">{formik.errors.name}</div>
+            ) : null}
+          </div>
+          <div>
+            <input
+              type={"email"}
+              name="email"
+              className="border p-2 px-2 w-full bg-transparent rounded bg-white"
+              placeholder="Enter your email*"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+            />
+            {formik.touched.email && formik.errors.email ? (
+              <div className="text-xs text-red-700">{formik.errors.email}</div>
+            ) : null}
+          </div>
+          <div>
+            <input
+              type={"text"}
+              name="number"
+              className="border p-2 px-2 w-full bg-transparent rounded bg-white"
+              placeholder="Enter your contact number*"
+              onChange={formik.handleChange}
+              value={formik.values.number}
+            />
+            {formik.touched.number && formik.errors.number ? (
+              <div className="text-xs text-red-700">{formik.errors.number}</div>
+            ) : null}
+          </div>
+          <div>
+            <input
+              type={"text"}
+              name="address"
+              className="border p-2 px-2 w-full bg-transparent rounded bg-white"
+              placeholder="Enter your address*"
+              onChange={formik.handleChange}
+              value={formik.values.address}
+            />
+            {formik.touched.address && formik.errors.address ? (
+              <div className="text-xs text-red-700">
+                {formik.errors.address}
+              </div>
+            ) : null}
+          </div>
+          <div>
+            <select
+              name="productName"
+              className="border p-2 px-2 w-full bg-transparent rounded bg-white text-gray-400"
+              value={formik.values.productName}
+              onChange={(e) => {
+                formik.handleChange(e);
+                setSelected(e.target.value);
+              }}
+            >
+              <option value="default" hidden>
+                Bikes you are interested in*
               </option>
-            ))}
-          </select>
+              {imageTransparent.map((item) => (
+                <option key={item.name} value={item.name}>
+                  {item.name}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
         <div className="flex items-center space-x-3">
           <button
