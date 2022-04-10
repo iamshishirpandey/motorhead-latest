@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import HomeModel from "../../HomeModel";
+import HomeModel from "../../HomeModel/HomeModel";
+import SubmitNotification from "../../HomeModel/SubmitNotification";
 import MainHeader from "./MainHeader";
 import TopSection from "./TopSection";
 
@@ -11,7 +12,8 @@ type Props = {
 const Header = (props: Props) => {
   const { open, setOpen } = props;
   const router = useRouter();
-  console.log(router);
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <div className="mx-auto max-w-[1440px]">
@@ -20,7 +22,10 @@ const Header = (props: Props) => {
         </div>
         <MainHeader />
       </div>
-      {router.pathname === "/" && <HomeModel open={open} setOpen={setOpen} />}
+      {router.pathname === "/" && (
+        <HomeModel open={open} setOpen={setOpen} setShow={setShow} />
+      )}
+      {show && <SubmitNotification show={show} setShow={setShow} />}
     </>
   );
 };

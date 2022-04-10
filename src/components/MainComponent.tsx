@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Blogs from "./Blogs";
 import FullCarousel from "./Home/FullCarousel";
 import OurProduct from "./Home/OurProduct";
-import HomeModel from "./HomeModel";
+import HomeModel from "./HomeModel/HomeModel";
 
 type Props = {};
 
