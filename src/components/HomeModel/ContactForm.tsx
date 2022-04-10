@@ -29,10 +29,10 @@ const ContactForm = (props: Props) => {
   const { setShow, setOpen, setSelected } = props;
   const formik = useFormik({
     initialValues: {
-      name: "se",
-      email: "we@dfds.cm",
-      number: "dsd",
-      address: "dse",
+      name: "",
+      email: "",
+      number: "",
+      address: "",
       productName: "",
     },
     validationSchema: DisplayingErrorMessagesSchema,
