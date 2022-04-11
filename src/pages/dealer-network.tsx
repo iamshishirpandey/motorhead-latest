@@ -68,13 +68,6 @@ const DealerNetwork = (props: Props) => {
       email: "sales@motorheadnepal.com.np",
     },
     {
-      name: "SLR Techno & Trade Pvt. Ltd.",
-      address: "Beni",
-      phone: "",
-      mobilePhone: "9861945096",
-      email: "sales@motorheadnepal.com.np",
-    },
-    {
       name: "Lumbini Two Wheels Pvt. Ltd.",
       address: "Butwal",
       phone: "9847594276",
@@ -115,13 +108,6 @@ const DealerNetwork = (props: Props) => {
       address: "Hetauda",
       phone: "",
       mobilePhone: "9855089174",
-      email: "sales@motorheadnepal.com.np",
-    },
-    {
-      name: "SLR Techno & Trade Pvt. Ltd.",
-      address: "Syanja",
-      phone: "9802623600",
-      mobilePhone: "9857033843,",
       email: "sales@motorheadnepal.com.np",
     },
   ];
@@ -201,7 +187,14 @@ const DealerNetwork = (props: Props) => {
                 href={`tel:980262600`}
                 className="font-medium hover:text-red-700"
               >
-                980262600
+                9802623600
+              </a>
+              ,
+              <a
+                href={`tel:9857033843`}
+                className="font-medium hover:text-red-700"
+              >
+                9857033843
               </a>
             </li>
             <li>
