@@ -384,7 +384,7 @@ export const productObject = [
       "/tekken250.jpg",
       "/tekken250.jpg",
     ],
-    price: "3,95,000/-",
+    price: "4,05,000/-",
     displacement: "250cc with inner balancer",
     lwh_mm: "2145*850*1175",
     tag: "AGV, Full-face",

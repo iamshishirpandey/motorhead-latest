@@ -81,13 +81,7 @@ const DealerNetwork = (props: Props) => {
       mobilePhone: "9866614144",
       email: "sales@motorheadnepal.com.np",
     },
-    {
-      name: "SLR Techno & Trade Pvt. Ltd.",
-      address: "Khadbari",
-      phone: "",
-      mobilePhone: "9852058269",
-      email: "sales@motorheadnepal.com.np",
-    },
+
     {
       name: "Tonia Trading and Concerns",
       address: "Dhadhing",
@@ -192,8 +186,24 @@ const DealerNetwork = (props: Props) => {
         </div>
         <div className="py-5">
           <ul>
-            <li>Beni</li>
-            <li>Syanja</li>
+            <li>
+              Beni:{" "}
+              <a
+                href={`tel:9861945096`}
+                className="font-medium hover:text-red-700"
+              >
+                9861945096
+              </a>
+            </li>
+            <li>
+              Syanja:{" "}
+              <a
+                href={`tel:980262600`}
+                className="font-medium hover:text-red-700"
+              >
+                980262600
+              </a>
+            </li>
             <li>
               Dulegauda:{" "}
               <a
