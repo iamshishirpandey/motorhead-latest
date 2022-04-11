@@ -4,7 +4,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { imageTransparent } from "../imageTransparent";
 import emailjs from "emailjs-com";
 import { FaYoutube } from "react-icons/fa";
-import { Form, Formik, FormikProvider, useFormik } from "formik";
+import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
 type Props = {
@@ -44,7 +44,6 @@ const ContactForm = (props: Props) => {
           "template_vefo0ch",
           //@ts-ignore
           form.current,
-
           "3tOjgQYDS_3oNxS_u"
         );
 

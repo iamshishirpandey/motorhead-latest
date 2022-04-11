@@ -8,7 +8,11 @@ export const imageTransparent = [
     img: "/bgNone/Scrambler250.png",
   },
   {
-    name: "Sports250",
+    name: "Sports250 (Road tyre)",
+    img: "/output-onlinepngtools1.png",
+  },
+  {
+    name: "Sports250 (Off-Road tyre)",
     img: "/bgNone/Sports250.png",
   },
   {
