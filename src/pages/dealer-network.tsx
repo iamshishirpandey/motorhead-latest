@@ -195,7 +195,7 @@ const DealerNetwork = (props: Props) => {
             <li>Beni</li>
             <li>Syanja</li>
             <li>
-              Dulegauda:
+              Dulegauda:{" "}
               <a
                 href={`tel:9804105958`}
                 className="font-medium hover:text-red-700"
@@ -213,7 +213,7 @@ const DealerNetwork = (props: Props) => {
         <div className="py-5">
           <ul>
             <li>
-              Kapan:
+              Kapan:{" "}
               <a
                 href={`tel:9804105958`}
                 className="font-medium hover:text-red-700"
@@ -222,7 +222,7 @@ const DealerNetwork = (props: Props) => {
               </a>
             </li>
             <li>
-              Galchhi:
+              Galchhi:{" "}
               <a
                 href={`tel:9804105958`}
                 className="font-medium hover:text-red-700"
@@ -231,7 +231,7 @@ const DealerNetwork = (props: Props) => {
               </a>
             </li>
             <li>
-              Abukhaireni:
+              Abukhaireni:{" "}
               <a
                 href={`tel:9804105958`}
                 className="font-medium hover:text-red-700"
@@ -240,7 +240,7 @@ const DealerNetwork = (props: Props) => {
               </a>
             </li>
             <li>
-              Sallaghari:
+              Sallaghari:{" "}
               <a
                 href={`tel:9804105958`}
                 className="font-medium hover:text-red-700"
