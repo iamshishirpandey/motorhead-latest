@@ -16,7 +16,7 @@ const Header = (props: Props) => {
 
   return (
     <>
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-[1440px] ">
         <div className="hidden lg:block ">
           <TopSection />
         </div>
