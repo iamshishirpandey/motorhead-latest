@@ -218,37 +218,37 @@ const DealerNetwork = (props: Props) => {
             <li>
               Kapan:{" "}
               <a
-                href={`tel:9804105958`}
+                href={`tel:9841195328`}
                 className="font-medium hover:text-red-700"
               >
-                9804105958
+                9841195328
               </a>
             </li>
             <li>
               Galchhi:{" "}
               <a
-                href={`tel:9804105958`}
+                href={`tel:9813051864`}
                 className="font-medium hover:text-red-700"
               >
-                9804105958
+                9813051864
               </a>
             </li>
             <li>
               Abukhaireni:{" "}
               <a
-                href={`tel:9804105958`}
+                href={`tel:9826196213`}
                 className="font-medium hover:text-red-700"
               >
-                9804105958
+                9826196213
               </a>
             </li>
             <li>
               Sallaghari:{" "}
               <a
-                href={`tel:9804105958`}
+                href={`tel:9851013395`}
                 className="font-medium hover:text-red-700"
               >
-                9804105958
+                9851013395
               </a>
             </li>
           </ul>
