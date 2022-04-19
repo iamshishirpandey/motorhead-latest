@@ -27,34 +27,6 @@ const images = [
     link: "https://www.meroauto.com/news/motorhead-2079-new-year-offer/",
     time: "April 6,2022",
   },
-  {
-    title: "New Year Scratch",
-    name: "On the occasion of New Year, Motorhead brought 'Scratch and Catch the Cash' offer",
-    image: "/event/event1.webp",
-    link: "https://www.samayapost.com/04/233345.html",
-    time: "April 7,2020",
-  },
-  {
-    title: "Special Plan Public",
-    name: "Under the offer, the company will be able to get a discount of Rs 7,000  to Rs 1 lakh for all its customers",
-    image: "/event/event1.webp",
-    link: "https://aarthiknews.com/news/52291",
-    time: "April 10,2020",
-  },
-  {
-    title: "Up to 1 Million Discount",
-    name: "Motorhead's New Offer: Up to 1 Million Discount on Bike Purchase, Lucky Lucky Will Get 2,07,900",
-    image: "/event/event1.webp",
-    link: "https://nepalauto.com/motorhead-bikes-to-buy-and-win-207900/",
-    time: "April 10,2020",
-  },
-  {
-    title: "Motorhead New Year Offer",
-    name: "Kathmandu. SLR Techno & Trade, the official distributor of Adventure segment motorhead bikes, has come up with various offers for the new year 2078.",
-    image: "/event/event5.jpeg",
-    link: "https://www.bikashnews.com/2022/03/30/321177.html",
-    time: "April 9,2020",
-  },
 ];
 
 const Blogs = (props: Props) => {
@@ -72,35 +44,6 @@ const Blogs = (props: Props) => {
         </div>
 
         <div className="md:col-span-2 sm:p-5 lg:p-10 bg-white rounded space-y-5 lg:space-y-10">
-          <div className="space-y-2">
-            <h1 className="text-xl md:text-2xl text-red-700">
-              Authorized Service Provider
-            </h1>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-500">
-              Authorized Service Provider Opening in Chahabil on Poush 15, 2078.
-            </p>
-          </div>
-          {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0">
-            {images.map((item, index) => (
-              <img
-                key={index}
-                src={item}
-                alt={item}
-                className={`${
-                  show && ind === index ? "sm:p-0" : "sm:p-5"
-                }   w-full h-auto ease-in-out duration-300 bg-cover top-0`}
-                onMouseOver={() => {
-                  setShow(true);
-                  setInd(index);
-                }}
-                onMouseLeave={() => setShow(false)}
-                onClick={() => {
-                  setOpen(true);
-                  setImgShow(item);
-                }}
-              />
-            ))}
-          </div> */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {images.map((item, index) => (
               <a
@@ -125,16 +68,16 @@ const Blogs = (props: Props) => {
                   <div className="-mt-24 bg-white z-10 p-5 w-3/4 space-y-4">
                     <div className="font-bold text-xl">{item.title}</div>
                     <div className="flex space-x-2 items-center text-sm">
-                      <MdOutlineWatchLater className="text-yellow-500 w-4 h-4" />
+                      <MdOutlineWatchLater className="text-red-500 w-4 h-4" />
                       <span className="mt-0.5"> April 24,2020</span>
                     </div>
                     <p className="text-sm font-light">{item.name}</p>
-                    <button className="flex shadow  items-center hover:bg-yellow-500 text-black hover:text-white">
+                    <button className="flex shadow  items-center hover:bg-red-500 text-black hover:text-white">
                       <div
                         style={{
                           clipPath: "polygon(0 1%, 68% 0, 100% 100%, 0 100%)",
                         }}
-                        className="bg-yellow-500 py-2.5 px-4 pr-6 "
+                        className="bg-red-500 py-2.5 px-4 pr-6 "
                       >
                         <HiOutlineArrowNarrowRight className="w-5 h-5 text-white" />
                       </div>
@@ -145,6 +88,15 @@ const Blogs = (props: Props) => {
               </a>
             ))}
           </div>
+        </div>
+        <div className="flex justify-center">
+          <a
+            href="blog"
+            className="text-white bg-red-500 font-light flex items-center space-x-2 px-4 py-2 uppercase text-lg"
+          >
+            <span>View more</span>
+            <HiOutlineArrowNarrowRight className="w-5 h-5 text-white mb-1" />
+          </a>
         </div>
       </div>
 

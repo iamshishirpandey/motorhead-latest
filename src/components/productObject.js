@@ -2,13 +2,13 @@ export const productObject = [
   {
     name: "MH200X",
     img: [
-      "/mh200x.jpg",
+      "/mh200x3.jpg",
       "/mh200x2.jpg",
-      "/mh200x.jpg",
+      "/mh200x3.jpg",
       "/mh200x2.jpg",
-      "/mh200x.jpg",
+      "/mh200x3.jpg",
       "/mh200x2.jpg",
-      "/mh200x.jpg",
+      "/mh200x3.jpg",
       "/mh200x2.jpg",
     ],
     displacement: "200cc with inner balancer",

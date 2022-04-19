@@ -66,14 +66,6 @@ const Blogs = (props: any) => {
     <>
       <div className="lg:p-10 bg-gray-100 grid md:grid-cols-3 gap-5">
         <div className="md:col-span-2 sm:p-5 lg:p-10 bg-white rounded space-y-5 lg:space-y-10">
-          <div className="p-5 sm:p-0 space-y-2">
-            <h1 className=" text-2xl text-red-700">
-              Authorized Service Provider
-            </h1>
-            <p className="text-lg text-gray-500">
-              Authorized Service Provider Opening in Chahabil on Poush 15, 2078.
-            </p>
-          </div>
           <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-5">
             {images.map((item, index) => (
               <a
@@ -98,16 +90,16 @@ const Blogs = (props: any) => {
                   <div className="-mt-24 bg-white z-10 p-5 w-3/4 space-y-4">
                     <div className="font-bold text-xl">{item.title}</div>
                     <div className="flex space-x-2 items-center text-sm">
-                      <MdOutlineWatchLater className="text-yellow-500 w-4 h-4" />
+                      <MdOutlineWatchLater className="text-red-500 w-4 h-4" />
                       <span className="mt-0.5"> April 24,2020</span>
                     </div>
                     <p className="text-sm font-light">{item.name}</p>
-                    <button className="flex shadow  items-center hover:bg-yellow-500 text-black hover:text-white">
+                    <button className="flex shadow  items-center hover:bg-red-500 text-black hover:text-white">
                       <div
                         style={{
                           clipPath: "polygon(0 1%, 68% 0, 100% 100%, 0 100%)",
                         }}
-                        className="bg-yellow-500 py-2.5 px-4 pr-6 "
+                        className="bg-red-500 py-2.5 px-4 pr-6 "
                       >
                         <HiOutlineArrowNarrowRight className="w-5 h-5 text-white" />
                       </div>
