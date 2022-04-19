@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Blogs from "./Blogs";
+import Blogs from "./Home/Blogs";
 import FullCarousel from "./Home/FullCarousel";
 import OurProduct from "./Home/OurProduct";
 import HomeModel from "./HomeModel/HomeModel";

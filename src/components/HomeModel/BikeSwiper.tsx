@@ -40,7 +40,7 @@ const BikeSwiper = (props: Props) => {
                       <img
                         src={items.img}
                         alt={items.img}
-                        className="h-[30rem] w-full"
+                        className="h-[25rem] w-full"
                       />
                     </div>
                   </SwiperSlide>
@@ -57,7 +57,7 @@ const BikeSwiper = (props: Props) => {
                   <img
                     src={items.img}
                     alt={items.img}
-                    className="h-[30rem] w-full"
+                    className="h-[25rem] w-full"
                   />
                 </div>
               </SwiperSlide>

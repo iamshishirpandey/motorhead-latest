@@ -191,12 +191,7 @@ export const productObject = [
   },
   {
     name: "Sports 250 (Off-road tyre)",
-    img: [
-      "/Sports250.jpg",
-      "/Sports250.jpg",
-      "/Sports250.jpg",
-      "/Sports250.jpg",
-    ],
+    img: ["/Sports250.jpg", "/Sports250.jpg", "/Sports250.jpg"],
     price: "Nrs 3,68,000/-",
     displacement: "250cc with inner balancer",
     lwh_mm: "2130*860*1200",
