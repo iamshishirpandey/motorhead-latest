@@ -8,9 +8,37 @@ const Blogs = (props: any) => {
   const images = [
     {
       title: "Tuladhar, won Rs 1 lakh",
-      name: "Suvendu Ratna Tuladhar, who bought a motorhead brand bike, has won Rs one lakh in cash. Nepal's only official distributor for the Motorhead brand is S.L.R.",
+      name: "Suvendu Ratna Tuladhar, who bought a motorhead brand bike, has won Rs one lakh in cash.",
       image: "/event/event6.jpeg",
       link: "https://arthikawaj.com/motorhead-19/",
+      time: "April 25,2022",
+    },
+    {
+      title: "Tuladhar got one lakh",
+      name: "Kathmandu. The official distributor of Motorhead, SLR Techno & Trade Pvt. During a program in Kathmandu,...",
+      image: "/event/event7.jpeg",
+      link: "https://www.bikashnews.com/2022/04/25/324608.html",
+      time: "April 25,2022",
+    },
+    {
+      title: "Tuladhar, won Rs 1 lakh",
+      name: "Kathmandu. Suvendu Ratna Tuladhar, who bought a motorhead brand bike, has won Rs one lakh in cash.",
+      image: "/event/event9.jpeg",
+      link: "https://purbelinews.com/business/504639",
+      time: "April 25,2022",
+    },
+    {
+      title: "Tuladhar got one lakh rupees in cash",
+      name: "The company has announced the names of three lucky winners who will receive cash prizes through lottery...",
+      image: "/event/event8.jpeg",
+      link: "https://corporatekhabar.com/motorhead-4/",
+      time: "April 25,2022",
+    },
+    {
+      title: "Festival of Happiness",
+      name: "SLR Techno & Ted Pvt. Ltd., the official distributor of Motorhead brand for Nepal, has concluded its lucky... ",
+      image: "/event/event10.jpeg",
+      link: "https://nepalsamaya.com/market/2022-04-25-213757",
       time: "April 25,2022",
     },
     {
@@ -57,7 +85,7 @@ const Blogs = (props: any) => {
     },
     {
       title: "Motorhead New Year Offer",
-      name: "Kathmandu. SLR Techno & Trade, the official distributor of Adventure segment motorhead bikes, has come up with various offers for the new year 2078.",
+      name: "Kathmandu. SLR Techno & Trade, the official distributor of Adventure segment motorhead bikes,...",
       image: "/event/event5.jpeg",
       link: "https://www.bikashnews.com/2022/03/30/321177.html",
       time: "April 9,2020",
