@@ -7,6 +7,13 @@ import ImgModel from "./common/ImgModel";
 const Blogs = (props: any) => {
   const images = [
     {
+      title: "Tuladhar, won Rs 1 lakh",
+      name: "Suvendu Ratna Tuladhar, who bought a motorhead brand bike, has won Rs one lakh in cash. Nepal's only official distributor for the Motorhead brand is S.L.R.",
+      image: "/event/event6.jpeg",
+      link: "https://arthikawaj.com/motorhead-19/",
+      time: "April 25,2022",
+    },
+    {
       title: "Scratch and Catch ",
       name: "Motorhead brings 'Scratch and Catch the Cash Offer', up to one lakh discount on bike purchase",
       image: "/event/event1.webp",
