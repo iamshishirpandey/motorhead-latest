@@ -4,6 +4,11 @@ import Member from "./Member";
 type Props = {};
 const teams = [
   {
+    img: "team03.jpg",
+    name: "Lok Harsha Shakya",
+    post: "Chairman",
+  },
+  {
     img: "team01.jpg",
     name: "Shiva Prasad Ghimire",
     post: "Vice–Chairman",
@@ -17,11 +22,6 @@ const teams = [
     img: "sudip-ghimire.jpeg",
     name: "Sudip Ghimire",
     post: "Director",
-  },
-  {
-    img: "team03.jpg",
-    name: "Lok Harsha Shakya",
-    post: "Chairman",
   },
 ];
 
