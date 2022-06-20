@@ -11,7 +11,7 @@ export const productObject = [
       "/mh200x3.jpg",
       "/mh200x2.jpg",
     ],
-    displacement: "200cc with inner balancer",
+    displacement: "200cc",
     price: "3,75,000/-",
     lwh_mm: "2080*780*1150",
     description: `Though the name ‘Motorhead’ may be relatively new in Nepal, the company’s history dates back to 2005 when it was first established. Fast forward to today, the Chinese motorcycle manufacturer produces more than 200,000 units a year and their products are sold all over the world, primarily establishing itself in the automotive markets of South America, Middle East, Southeast Asia and Africa. Nowadays, the company is focussed on launching exciting new products at affordable prices in Nepal.`,
@@ -55,7 +55,7 @@ export const productObject = [
         name: "Electricals",
         current: false,
         details: [
-          "Speedmeter: Mechanical speedometer",
+          "Speedmeter: Digital/Analogue (Techometer: Analogue & odometer: Digital)",
           "Starting Method: Electric start",
         ],
       },
@@ -149,7 +149,7 @@ export const productObject = [
         name: "Electricals",
         current: false,
         details: [
-          "Speedmeter: Digital speedometer",
+          "Speedmeter: Digital/Analogue (Techometer: Analogue & odometer: Digital)",
           "Starting Method: Electric start",
         ],
       },
