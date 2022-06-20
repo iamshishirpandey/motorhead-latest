@@ -64,7 +64,7 @@ export const productObject = [
         name: "Engine",
         current: false,
         details: [
-          "Engine: Loncin RE250",
+          "Engine: 200cc",
           "Engine Type: Electric start,6gears,air cool,12V/12pole",
           "Configuration: Carburetor PZ30",
           "Fuel Tank: 12 L",
@@ -158,7 +158,7 @@ export const productObject = [
         name: "Engine",
         current: false,
         details: [
-          "Engine: Loncin RE250",
+          "Engine: 200cc",
           "Engine Type: Electric start,6gears,Oil cool,12V/12pole",
           "Configuration: Carburetor PZ30",
           "Fuel Tank: 14 L",
