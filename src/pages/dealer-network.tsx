@@ -110,6 +110,13 @@ const DealerNetwork = (props: Props) => {
       mobilePhone: "9855089174",
       email: "sales@motorheadnepal.com.np",
     },
+    {
+      name: "Neha Suppliers",
+      address: "Khalanga, Jumla",
+      phone: "9848307789",
+      mobilePhone: "9860033494",
+      email: "sales@motorheadnepal.com.np",
+    },
   ];
   return (
     <div className="bg-gray-100">
