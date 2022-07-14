@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import type { AppProps } from "next/app";
 import Header from "../components/common/Header/Header";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import Footer from "../components/common/Footer/Footer";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,6 +16,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Header open={open} setOpen={setOpen} />
         <Component {...pageProps} />
         <Footer />
+        <div className="flex flex-col space-y-2 fixed bottom-6 right-2">
+          {process.browser && (
+            <MessengerCustomerChat
+              pageId="102245011342108"
+              appId="3551569594939498"
+              htmlRef={window.location.pathname}
+            />
+          )}
+        </div>
       </div>
     </>
   );
