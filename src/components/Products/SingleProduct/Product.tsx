@@ -18,7 +18,7 @@ const Product = () => {
 
     setData(flightdata);
     console.log(data);
-  }, [flightModel]);
+  }, [data, flightModel]);
   return (
     <>
       {data && data[0] && <ProductDetails bike={data[0]} />}
