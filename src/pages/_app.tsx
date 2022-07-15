@@ -18,13 +18,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer />
         <div className="flex flex-col space-y-2 fixed bottom-6 right-2">
-          {/* {process.browser && ( */}
-          <MessengerCustomerChat
-            pageId="102245011342108"
-            appId="3551569594939498"
-            // htmlRef={window.location.pathname}
-          />
-          {/* )} */}
+          {process.browser && (
+            <MessengerCustomerChat
+              pageId="103119638352407"
+              appId="589517442533004"
+              htmlRef={window.location.pathname}
+            />
+          )}
         </div>
       </div>
     </>
