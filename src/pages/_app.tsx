@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import type { AppProps } from "next/app";
 import Header from "../components/common/Header/Header";
+//@ts-ignore
 import MessengerCustomerChat from "react-messenger-customer-chat";
 import Footer from "../components/common/Footer/Footer";
 import "swiper/css";
