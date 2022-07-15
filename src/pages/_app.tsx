@@ -20,8 +20,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div className="flex flex-col space-y-2 fixed bottom-6 right-2">
           {process.browser && (
             <MessengerCustomerChat
-              pageId="103119638352407"
-              appId="589517442533004"
+              pageId="1937956182905475"
+              appId="349126610714488"
               htmlRef={window.location.pathname}
             />
           )}
