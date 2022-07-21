@@ -1,7 +1,5 @@
 import React from "react";
 import Swipers from "./Swiper";
-import { useRouter } from "next/router";
-import { productObject } from "../../productObject";
 
 type Props = {
   bike: any;

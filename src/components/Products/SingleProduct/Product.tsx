@@ -7,18 +7,18 @@ import ProductDetails from "./ProductDetails";
 
 const Product = () => {
   const Router = useRouter();
-  const flightModel = Router.query.name;
 
   const [data, setData] = useState([{}]);
-
   useEffect(() => {
-    const flightdata = productObject.filter((item) => {
-      return item.name === flightModel;
-    });
-
-    setData(flightdata);
-    console.log(data);
-  }, [data, flightModel]);
+    if (Router) {
+      const flightData = productObject.filter((item) => {
+        return item.name === Router.query.name;
+      });
+      console.log(productObject, Router.query.name);
+      console.log(flightData);
+      setData(flightData);
+    }
+  }, [Router]);
   return (
     <>
       {data && data[0] && <ProductDetails bike={data[0]} />}

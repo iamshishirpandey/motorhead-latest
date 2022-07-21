@@ -33,9 +33,12 @@ const MobDiscloser = (props: Props) => {
                       (
                         singleDetails: {} | null | undefined,
                         index: React.Key | null | undefined
-                      ) => (
-                        <div key={index}>{singleDetails}</div>
-                      )
+                      ) => {
+                        return (
+                          //@ts-ignore
+                          <div key={index}>{singleDetails}</div>
+                        );
+                      }
                     )}
                   </Disclosure.Panel>
                 </>

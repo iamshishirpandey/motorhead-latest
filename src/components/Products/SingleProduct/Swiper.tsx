@@ -26,7 +26,7 @@ const responsive = {
 const Swipers = (props: Props) => {
   const { img } = props;
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
+  console.log(img);
   return (
     <div className="bg-gray-100">
       <div className="">
@@ -37,15 +37,17 @@ const Swipers = (props: Props) => {
           className="w-full"
           infinite={true}
         >
-          {img.map((item, index) => (
-            <div key={index}>
-              <img
-                src={item}
-                alt={item}
-                className="object-fill w-full h-auto"
-              />
-            </div>
-          ))}
+          {img.map((item, index) => {
+            return (
+              <div key={index}>
+                <img
+                  src={item}
+                  alt={item}
+                  className="object-fill w-full h-auto"
+                />
+              </div>
+            );
+          })}
         </Carousel>
       </div>
 
@@ -60,7 +62,7 @@ const Swipers = (props: Props) => {
         className="mySwiper"
       >
         {img.map((item, index) => (
-          <SwiperSlide key={item}>
+          <SwiperSlide key={index}>
             <img src={item} alt={item} className="w-full h-auto bg-cover" />
           </SwiperSlide>
         ))}
